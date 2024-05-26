@@ -4,6 +4,12 @@ export const Section = styled.section``;
 
 export const Title  = styled.h2``;
 
+export const ContactBLock = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+`;
+
 export const Address = styled.address``;
 
 export const ContactList = styled.ul``;

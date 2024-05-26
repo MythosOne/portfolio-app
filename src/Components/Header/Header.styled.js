@@ -13,4 +13,9 @@ export const Section = styled.header`
   padding: 10px;
 
   backdrop-filter: blur(50px);
+  
+  @media screen and (max-width: 767px) {
+    display: none;
+    margin: 0;
+  }
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Logo from '../Logo/Logo';
-import HeaderNav from '../Header/HeaderNav/HeaderNav';
+import Navigation from '../Nav/Nav';
 
 import { Section } from './Header.styled';
 
@@ -10,7 +10,7 @@ function Header() {
   return (
     <Section>
       <Logo />
-      <HeaderNav />
+      <Navigation />
     </Section>
   );
 }
