@@ -61,3 +61,11 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 60px;
+}

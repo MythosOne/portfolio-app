@@ -18,7 +18,7 @@ import { ContactForm } from './ContactForm/ContactForm.jsx';
 
 function ContactsSection() {
   return (
-    <Section>
+    <Section id='contacts'>
       <Title>Contact me</Title>
       <ContactBLock>
         <Address>

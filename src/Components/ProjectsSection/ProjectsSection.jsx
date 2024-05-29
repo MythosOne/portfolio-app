@@ -6,7 +6,7 @@ import { Section, TitleSection } from './ProjectsSection.styled.js';
 
 function ProjectsSection() {
   return (
-    <Section>
+    <Section id='projects'>
       <TitleSection>My projects</TitleSection>
       <ProjectsList />
     </Section>

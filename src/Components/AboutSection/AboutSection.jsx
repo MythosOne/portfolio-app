@@ -13,7 +13,7 @@ import {
 
 function AboutSection() {
   return (
-    <Section>
+    <Section id='about'>
       <TitleSection>About me</TitleSection>
       <AboutList>
         <AboutItem>

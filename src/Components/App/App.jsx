@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../Header/Header';
-import Navigation from '../Nav/Nav';
+import BottomNav from '../Nav/BottomNav/BottomNav';
 import HomePage from 'page/HomePage';
 import Footer from '../Footer/Footer';
 import './App.styled.js';
@@ -8,7 +8,7 @@ import './App.styled.js';
 function App() {
   const [isVisible, setIsVisible] = useState(window.innerWidth <= 767);
   console.log("isVisible:", isVisible);
-  
+
   useEffect(() => {
     const handleResize = () => {
       setIsVisible(window.innerWidth <= 767);
@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <Header />
-      {isVisible && <Navigation />}
+      {isVisible && <BottomNav />}
       <HomePage />
       <Footer />
     </>
