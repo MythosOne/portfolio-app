@@ -15,7 +15,6 @@ export const Section = styled.header`
   backdrop-filter: blur(50px);
   
   @media screen and (max-width: 767px) {
-    display: none;
-    margin: 0;
+    justify-content: center;
   }
 `;

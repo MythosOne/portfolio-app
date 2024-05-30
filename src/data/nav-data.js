@@ -4,7 +4,7 @@ import FolderOutlinedIcon from '@mui/icons-material/FolderOutlined';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
 
 const navData = [
-  { id: 1, nameItem: 'Home', linkItem: '/', icon: <HomeOutlinedIcon /> },
+  { id: 1, nameItem: 'Home', linkItem: 'about', icon: <HomeOutlinedIcon /> },
   {
     id: 2,
     nameItem: 'About',

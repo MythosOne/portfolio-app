@@ -26,7 +26,9 @@ code {
 
 section {
   padding: 0 20px;
-  margin: 40px 0;
+  margin: 20px 0 0;
+
+  scroll-margin-top: 60px;
 }
 
 ul,
@@ -39,8 +41,7 @@ a {
 }
 
 h1,
-h2
-{
+h2 {
   margin: 0;
   text-transform: uppercase;
 }
@@ -64,8 +65,4 @@ img {
 
 html {
   scroll-behavior: smooth;
-}
-
-section {
-  scroll-margin-top: 60px;
 }

@@ -20,6 +20,8 @@ function HeaderNav() {
                   </NavListItemLink>
                 </NavListItem>
               );
+            } else {
+              return null;
             }
           })}
         </NavList>

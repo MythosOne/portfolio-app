@@ -5,8 +5,6 @@ import navData from 'data/nav-data';
 import PropTypes from 'prop-types';
 
 import {
-  // Nav,
-  // NavList,
   NavListItem,
   NavListItemLink,
   bottomNavigationStyle,
@@ -23,7 +21,6 @@ function BottomNav() {
 
   return (
     <>
-      {/* <Nav> */}
       <BottomNavigation
         sx={bottomNavigationStyle}
         value={value}
@@ -43,7 +40,6 @@ function BottomNav() {
           );
         })}
       </BottomNavigation>
-      {/* </Nav> */}
     </>
   );
 }
