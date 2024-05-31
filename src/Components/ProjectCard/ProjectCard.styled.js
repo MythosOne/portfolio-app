@@ -21,7 +21,7 @@ export const DescriptionBlock = styled.div`
 `;
 
 export const CardItem = styled.li`
-  width: 370px;
+  width: 320px;
   height: 430px;
 
   border: 1px solid gray;
@@ -37,6 +37,14 @@ export const CardItem = styled.li`
 
   &:hover ${DescriptionBlock} {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 370px;
   }
 `;
 

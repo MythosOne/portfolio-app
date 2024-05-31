@@ -1,18 +1,26 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Section = styled.footer`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+  display: none;
 
-height: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-padding: 10px;
+    width: 728px;
+    height: 50px;
 
-@media screen and (max-width: 767px) {
-    display: none;
-}
+    padding: 10px;
+    margin: 0 auto;
+
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 1240px;
+  }
 `;
 
 export const Address = styled.address``;

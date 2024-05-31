@@ -7,14 +7,20 @@ export const Section = styled.header`
   z-index: 1001;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   padding: 10px;
+  margin: 0 auto;
 
   backdrop-filter: blur(50px);
-  
-  @media screen and (max-width: 767px) {
-    justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    width: 728px;
+    justify-content: space-between;
   }
+
+  @media screen and (min-width: 1279px) {
+    width: 1240px;
+  } 
 `;

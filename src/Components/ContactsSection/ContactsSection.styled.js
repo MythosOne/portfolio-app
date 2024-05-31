@@ -9,6 +9,8 @@ max-width: 440px;
   @media screen and (min-width: 768px) {
     max-width: none;
     width: 708px;
+
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1279px) {
