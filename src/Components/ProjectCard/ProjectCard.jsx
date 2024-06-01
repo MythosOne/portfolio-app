@@ -22,7 +22,7 @@ function ProjectCard({ data }) {
       <SiteBlock>
         <Img
           width="100%"
-          alt= {`${projectName} app`} 
+          alt={`${projectName} app`}
           loading="lazy"
           src={projectUrl}
         />
@@ -33,8 +33,16 @@ function ProjectCard({ data }) {
         </DescriptionBlock>
       </SiteBlock>
       <UrlBlock>
-        <WebsiteLink href={projectUrl}>{projectName} app</WebsiteLink>
-        <GitLink href={projectGit}>GitHUB</GitLink>
+        <WebsiteLink
+          href={projectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {projectName} app
+        </WebsiteLink>
+        <GitLink href={projectGit} target="_blank" rel="noopener noreferrer">
+          GitHUB
+        </GitLink>
       </UrlBlock>
     </CardItem>
   );

@@ -13,7 +13,7 @@ import {
 function BottomNav() {
   const menuItems = navData;
 
-  const [value, setValue] = React.useState('recents');
+  const [value, setValue] = React.useState('home');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -28,15 +28,16 @@ function BottomNav() {
       >
         {menuItems.map(menu => {
           return (
-            <NavListItem key={menu.id}>
-              <NavListItemLink href={`#${menu.linkItem}`}>
+            // <NavListItem key={menu.id}>
+            //   <NavListItemLink href={`#${menu.linkItem}`}>
                 <BottomNavigationAction
                   label={menu.nameItem}
-                  value={menu.nameItem}
+                  value={menu.linkItem}
                   icon={menu.icon}
+                  href={`#${menu.linkItem}`}
                 />
-              </NavListItemLink>
-            </NavListItem>
+            //   </NavListItemLink>
+            // </NavListItem>
           );
         })}
       </BottomNavigation>

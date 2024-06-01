@@ -12,7 +12,7 @@ import {
 
 function TechStackSection() {
   return (
-    <Section>
+    <Section id='tech'>
       <Title>Tech Stack</Title>
       <TechList>
         <TechItem>

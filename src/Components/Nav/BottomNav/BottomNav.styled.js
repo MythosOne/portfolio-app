@@ -16,6 +16,6 @@ export const bottomNavigationStyle = {
   }
 };
 
-export const NavListItem = styled.div``;
+// export const NavListItem = styled.div``;
 
-export const NavListItemLink = styled.a``;
+// export const NavListItemLink = styled.a``;

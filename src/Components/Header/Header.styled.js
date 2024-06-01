@@ -17,10 +17,12 @@ export const Section = styled.header`
 
   @media screen and (min-width: 768px) {
     width: 728px;
+    height: 40px;
     justify-content: space-between;
   }
 
   @media screen and (min-width: 1279px) {
     width: 1240px;
-  } 
+    height: 60px;
+  }
 `;

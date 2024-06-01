@@ -1,15 +1,15 @@
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import FolderOutlinedIcon from '@mui/icons-material/FolderOutlined';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
 
 const navData = [
-  { id: 1, nameItem: 'Home', linkItem: 'about', icon: <HomeOutlinedIcon /> },
+  { id: 1, nameItem: 'About', linkItem: 'about', icon: <PersonOutlineOutlinedIcon /> },
   {
     id: 2,
-    nameItem: 'About',
-    linkItem: 'about',
-    icon: <PersonOutlineOutlinedIcon />,
+    nameItem: 'Tech',
+    linkItem: 'tech',
+    icon: <AutoFixHighIcon />,
   },
   {
     id: 3,

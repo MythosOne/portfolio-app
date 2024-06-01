@@ -7,7 +7,7 @@ import { Section } from './Header.styled';
 
 function Header() {
   return (
-    <Section>
+    <Section id='header'>
       <Logo />
       <HeaderNav />
     </Section>
