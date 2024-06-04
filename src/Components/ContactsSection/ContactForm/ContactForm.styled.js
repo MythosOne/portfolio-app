@@ -36,7 +36,7 @@ export const Label = styled.label`
   flex-direction: column;
 
   margin-top: 28px;
-  color: #173d33;
+  color: #212121;
   text-align: justify;
   font-family: Fira Sans;
   font-size: 16px;
@@ -49,7 +49,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   height: 36px;
 
-  color: #173d33;
+  color: #212121;
   font-family: Fira Sans;
   font-size: 18px;
   font-style: normal;
@@ -61,7 +61,7 @@ export const Input = styled.input`
   border: none;
   outline: none;
   border-bottom: 1px solid;
-  border-color: ${props => (!props.error ? '#97d28b' : '#d28b8b')};
+  border-color: ${props => (!props.error ? '#2196f3' : '#d28b8b')};
 
   @media screen and (min-width: 1279px) {
     font-size: 20px;
@@ -87,7 +87,7 @@ export const ErrorMessage = styled.div`
 export const InputMessage = styled.textarea`
   height: 149px;
 
-  color: #173d33;
+  color: #212121;
   font-family: Fira Sans;
   font-size: 18px;
   font-style: normal;
@@ -98,8 +98,8 @@ export const InputMessage = styled.textarea`
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid #97d28b;
-  border-color: ${props => (!props.error ? '#97d28b' : '#d28b8b')};
+  border-bottom: 1px solid #2196f3;
+  border-color: ${props => (!props.error ? '#2196f3' : '#d28b8b')};
 `;
 
 export const BlockBtn = styled.div`
@@ -121,9 +121,9 @@ export const SendBtn = styled.button`
   gap: 12px;
 
   border-radius: 500px;
-  border: 1px solid #97d28b;
+  border: 1px solid #2196f3;
 
-  color: #173d33;
+  color: #212121;
   font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
@@ -136,9 +136,9 @@ export const SendBtn = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #173d33;
-    color: #97d28b;
-    border-color: #173d33;
+    background: #2774b2;
+    color: #fff;
+    /* border-color: #212121; */
 
     transition: all 0.2s ease-in-out;
   }
@@ -155,8 +155,8 @@ export const ButtonImg = styled.span`
   width: 32px;
   height: 32px;
   border-radius: 100px;
-  background: #97d28b;
+  background: #2196f3;
   border: 0;
 
-  stroke: #173d33;
+  stroke: #fff;
 `;

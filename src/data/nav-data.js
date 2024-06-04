@@ -7,7 +7,7 @@ const navData = [
   { id: 1, nameItem: 'About', linkItem: 'about', icon: <PersonOutlineOutlinedIcon /> },
   {
     id: 2,
-    nameItem: 'Tech',
+    nameItem: 'Technology',
     linkItem: 'tech',
     icon: <AutoFixHighIcon />,
   },

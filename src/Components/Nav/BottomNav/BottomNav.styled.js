@@ -12,8 +12,15 @@ export const bottomNavigationStyle = {
   backdropFilter: 'blur(50px)',
   '@media screen and (min-width: 767px)': {
     display: 'none',
-    margin: '0'
-  }
+    margin: '0',
+  },
+};
+
+export const BottomNavigationActionStyle = {
+  color: '#212121',
+
+  //!!! не работает цвет и толщина шрифта
+  '&:hover, &:focus': { fontWeight: '500', color: '#2196f3' }, 
 };
 
 // export const NavListItem = styled.div``;

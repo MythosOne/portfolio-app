@@ -8,6 +8,7 @@ import {
   NavListItem,
   NavListItemLink,
   bottomNavigationStyle,
+  BottomNavigationActionStyle,
 } from './BottomNav.styled';
 
 function BottomNav() {
@@ -30,12 +31,14 @@ function BottomNav() {
           return (
             // <NavListItem key={menu.id}>
             //   <NavListItemLink href={`#${menu.linkItem}`}>
-                <BottomNavigationAction
-                  label={menu.nameItem}
-                  value={menu.linkItem}
-                  icon={menu.icon}
-                  href={`#${menu.linkItem}`}
-                />
+            <BottomNavigationAction
+              sx={BottomNavigationActionStyle}
+              key={menu.id}
+              label={menu.nameItem}
+              value={menu.linkItem}
+              icon={menu.icon}
+              href={`#${menu.linkItem}`}
+            />
             //   </NavListItemLink>
             // </NavListItem>
           );

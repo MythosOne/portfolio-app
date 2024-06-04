@@ -12,7 +12,7 @@ function HeaderNav() {
       <Nav>
         <NavList>
           {menuItems.map(menu => {
-            if (menu.id > 1) {
+            if (menu.linkItem !== "tech") {
               return (
                 <NavListItem key={menu.id}>
                   <NavListItemLink href={`#${menu.linkItem}`}>

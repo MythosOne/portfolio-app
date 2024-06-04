@@ -19,13 +19,15 @@ height: 20px;
 `;
 
 export const NavListItemLink = styled.a`
-  font-size: 16px;
-  color: #333;
+  font-size: 18px;
+  color: #212121;
+  font-weight: 500;
   position: relative;
 
   &:hover {
     font-weight: 600;
-    color: #0074d9;
+    /* color: #0074d9;  */
+    color: #2196f3;
     transition: font-size 0.5s;
   }
 
@@ -36,7 +38,8 @@ export const NavListItemLink = styled.a`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #0074d9;
+    /* background-color: #0074d9; */
+    background-color: #2196f3;
     transform: scaleX(0);
     transition: transform 0.2s ease;
   }
