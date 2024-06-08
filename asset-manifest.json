@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.5514646d.css",
-    "main.js": "/portfolio-app/static/js/main.19775d9c.js",
+    "main.css": "/portfolio-app/static/css/main.6f49d898.css",
+    "main.js": "/portfolio-app/static/js/main.c2383740.js",
+    "static/media/phonebook.png": "/portfolio-app/static/media/phonebook.7e7f6fb4793b65691de4.png",
+    "static/media/webstudio.png": "/portfolio-app/static/media/webstudio.189265ef4794250dae91.png",
+    "static/media/ecosolution.png": "/portfolio-app/static/media/ecosolution.5a59bbf2ac755746f29f.png",
+    "static/media/weatherapp.png": "/portfolio-app/static/media/weatherapp.b698bf928cc3308eb9bf.png",
+    "static/media/foodsta.png": "/portfolio-app/static/media/foodsta.f49f85f9ec14891af580.png",
     "index.html": "/portfolio-app/index.html",
-    "main.5514646d.css.map": "/portfolio-app/static/css/main.5514646d.css.map",
-    "main.19775d9c.js.map": "/portfolio-app/static/js/main.19775d9c.js.map"
+    "main.6f49d898.css.map": "/portfolio-app/static/css/main.6f49d898.css.map",
+    "main.c2383740.js.map": "/portfolio-app/static/js/main.c2383740.js.map"
   },
   "entrypoints": [
-    "static/css/main.5514646d.css",
-    "static/js/main.19775d9c.js"
+    "static/css/main.6f49d898.css",
+    "static/js/main.c2383740.js"
   ]
 }
