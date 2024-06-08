@@ -19,6 +19,7 @@ import {
   JsImg,
   TsImg,
   ReactImg,
+  ReduxImg,
   MuiImg,
   NodeImg,
   MongoDBImg,
@@ -27,18 +28,19 @@ import {
 
 function TechStackSection() {
   const StackArr = [
-    { id: 0, techStack: 'HTML', img: <HtmlImg /> },
-    { id: 1, techStack: 'CSS', img: <CssImg /> },
-    { id: 2, techStack: 'SAAS', img: <SaasImg /> },
-    { id: 3, techStack: 'Figma', img: <FigmaImg /> },
-    { id: 4, techStack: 'WebPack', img: <WebPackImg /> },
-    { id: 5, techStack: 'JS', img: <JsImg /> },
-    { id: 6, techStack: 'TS', img: <TsImg /> },
-    { id: 7, techStack: 'React', img: <ReactImg /> },
-    { id: 8, techStack: 'Mui', img: <MuiImg /> },
-    { id: 9, techStack: 'Node', img: <NodeImg /> },
-    { id: 10, techStack: 'MongoDB', img: <MongoDBImg /> },
-    { id: 11, techStack: 'Docker', img: <DockerImg /> },
+    { id: 0, techStack: 'HTML', img: <HtmlImg width={'64'} /> },
+    { id: 1, techStack: 'CSS', img: <CssImg width={'64'} /> },
+    { id: 2, techStack: 'SAAS', img: <SaasImg width={'64'} /> },
+    { id: 3, techStack: 'Figma', img: <FigmaImg width={'64'} /> },
+    { id: 4, techStack: 'WebPack', img: <WebPackImg width={'64'} /> },
+    { id: 5, techStack: 'JS', img: <JsImg width={'64'} /> },
+    { id: 6, techStack: 'TS', img: <TsImg width={'64'} /> },
+    { id: 7, techStack: 'React', img: <ReactImg width={'64'} /> },
+    { id: 8, techStack: 'Redux', img: <ReduxImg width={'64'} /> },
+    { id: 9, techStack: 'Mui', img: <MuiImg width={'64'} /> },
+    { id: 10, techStack: 'Node', img: <NodeImg width={'64'} /> },
+    { id: 11, techStack: 'MongoDB', img: <MongoDBImg width={'64'} /> },
+    { id: 12, techStack: 'Docker', img: <DockerImg width={'64'} /> },
   ];
 
   return (
@@ -55,7 +57,8 @@ function TechStackSection() {
                   height="60"
                   alt={`${stack.techStack} image`}
                   loading="lazy"
-                /> */}{stack.img}
+                /> */}
+                {stack.img}
               </Picture>
             </TechItem>
           );

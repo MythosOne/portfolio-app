@@ -10,9 +10,9 @@ export const DescriptionBlock = styled.div`
   height: 100%;
 
   box-sizing: border-box;
-  padding: 10px;
+  padding: 15px;
 
-  /* overflow: scroll; */
+  overflow: scroll;
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,7 +24,7 @@ export const CardItem = styled.li`
   width: 320px;
   height: 430px;
 
-  border: 1px solid gray;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,24 +53,66 @@ export const SiteBlock = styled.div`
   overflow: hidden;
 `;
 
+export const Picture = styled.picture``;
+
 export const Img = styled.img`
-  height: 320px;
+  height: 350px;
 `;
 
-export const Title = styled.h3``;
+export const Title = styled.h3`
+  font-size: 22px;
+  color: #e5e5e5;
+`;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: normal;
+  color: #e5e5e5;
+`;
 
-export const Stack = styled.span``;
+export const StackList = styled.ul`
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media screen and (min-width: 1279px) {
+    margin-top: 15px;
+  }
+`;
+
+export const StackItem = styled.li``;
 
 export const UrlBlock = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
 
   padding: 10px;
 `;
 
-export const WebsiteLink = styled.a``;
+export const WebsiteLink = styled.a`
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 
-export const GitLink = styled.a``;
+  &:hover {
+    color: #2196f3;
+  }
+`;
+
+export const GitLink = styled.a`
+  color: #808080;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    color: #2196f3;
+  }
+`;

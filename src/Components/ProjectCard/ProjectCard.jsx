@@ -4,32 +4,51 @@ import PropTypes from 'prop-types';
 import {
   CardItem,
   SiteBlock,
+  Picture,
   Img,
   DescriptionBlock,
   Title,
   Text,
-  Stack,
+  StackList,
+  StackItem,
   UrlBlock,
   WebsiteLink,
   GitLink,
 } from './ProjectCard.styled.js';
 
 function ProjectCard({ data }) {
-  const { projectName, projectUrl, projectGit, description, techStack } = data;
+  const {
+    projectName,
+    projectImg,
+    projectUrl,
+    projectGit,
+    description,
+    techStack,
+  } = data;
 
   return (
     <CardItem>
       <SiteBlock>
-        <Img
-          width="100%"
-          alt={`${projectName} app`}
-          loading="lazy"
-          src={projectUrl}
-        />
+        <Picture>
+          <Img
+            width="100%"
+            alt={`${projectName} app`}
+            loading="lazy"
+            src={projectImg}
+          />
+        </Picture>
         <DescriptionBlock>
           <Title>{projectName}</Title>
           <Text>{description}</Text>
-          <Stack>{techStack}</Stack>
+          <StackList>
+            {techStack.map((stack, index) => {
+              return (
+                <StackItem key={index}>
+                  <Picture>{stack}</Picture>
+                </StackItem>
+              );
+            })}
+          </StackList>
         </DescriptionBlock>
       </SiteBlock>
       <UrlBlock>

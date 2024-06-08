@@ -19,6 +19,7 @@ export const Section = styled.header`
     width: 728px;
     height: 40px;
     justify-content: space-between;
+    background-color: #fff
   }
 
   @media screen and (min-width: 1279px) {

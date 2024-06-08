@@ -18,7 +18,7 @@ export const Section = styled.section`
 
   @media screen and (min-width: 1279px) {
     width: 1240px;
-  } 
+  }
 `;
 
 export const TitleSection = styled.h2``;
@@ -29,6 +29,12 @@ export const AboutList = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const AboutItem = styled.li``;

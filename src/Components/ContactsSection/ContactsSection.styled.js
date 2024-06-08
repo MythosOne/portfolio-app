@@ -25,6 +25,8 @@ export const ContactBLock = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+
+margin-top: 20px;
 `;
 
 export const Address = styled.address``;
