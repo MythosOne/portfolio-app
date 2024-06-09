@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { LogoWrapper } from './Logo.styled';
+import { LogoWrapper, DevText, Block, PortfolioText } from './Logo.styled';
 
 function Logo() {
   return (
     <>
-      <LogoWrapper href="/">WEBDEV Portfolio</LogoWrapper>
+      <LogoWrapper href="/">
+        WEB<DevText>DEV</DevText>
+        <Block>
+          <PortfolioText>Portfolio</PortfolioText>
+        </Block>
+      </LogoWrapper>
     </>
   );
 }

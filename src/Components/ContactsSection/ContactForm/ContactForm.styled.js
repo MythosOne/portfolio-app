@@ -123,6 +123,8 @@ export const SendBtn = styled.button`
   border-radius: 500px;
   border: 1px solid #2196f3;
 
+  background-color: #fff;
+
   color: #212121;
   font-family: Fira Sans;
   font-size: 16px;
@@ -138,7 +140,6 @@ export const SendBtn = styled.button`
   &:hover {
     background: #2774b2;
     color: #fff;
-    /* border-color: #212121; */
 
     transition: all 0.2s ease-in-out;
   }

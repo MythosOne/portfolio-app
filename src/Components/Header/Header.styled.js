@@ -19,7 +19,10 @@ export const Section = styled.header`
     width: 728px;
     height: 40px;
     justify-content: space-between;
-    background-color: #fff
+    background-color: #fff;
+
+    border-bottom: 2px solid transparent;
+    border-image: radial-gradient(circle, #2196f3, transparent) 1 0%
   }
 
   @media screen and (min-width: 1279px) {

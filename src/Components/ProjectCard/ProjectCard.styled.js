@@ -103,6 +103,7 @@ export const WebsiteLink = styled.a`
 
   &:hover {
     color: #2196f3;
+    transition: color 0.2s ease;
   }
 `;
 
@@ -114,5 +115,6 @@ export const GitLink = styled.a`
 
   &:hover {
     color: #2196f3;
+    transition: color 0.2s ease;
   }
 `;
