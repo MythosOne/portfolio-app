@@ -5,7 +5,7 @@ export const Section = styled.footer`
 
   @media screen and (min-width: 767px) {
     width: 728px;
-    margin: 0 auto;
+    margin: 40px auto 0;
 
     backdrop-filter: none;
 
@@ -30,6 +30,7 @@ export const ArrowUpBtn = styled.a`
   grid-area: arrowUp;
 
   justify-self: end;
+  box-sizing: border-box;
 
   display: flex;
   align-items: center;
@@ -37,14 +38,15 @@ export const ArrowUpBtn = styled.a`
   width: 28px;
   height: 28px;
   border-radius: 100px;
-  background: #a3d4ff;
+  background: #2196f3;
   border: 0;
 
-  stroke: #012c77;
+  stroke: #fff;
 
   &:hover {
-    stroke: #fff;
-    background: #2196f3;
+    stroke: #2196f3;
+    background: #fff;
+    border: 1px solid #2196f3;
 
     transition: all 0.2s ease-in-out;
   }

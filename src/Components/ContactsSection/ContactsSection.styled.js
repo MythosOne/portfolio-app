@@ -24,7 +24,7 @@ export const Title  = styled.h2``;
 export const ContactBLock = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-between;
 
 margin-top: 20px;
 `;

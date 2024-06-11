@@ -6,24 +6,27 @@ export const LogoWrapper = styled.a`
   height: 28px;
 
   color: #2196f3;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
 
-  ///!!! No working animation, correct
-  &:hover {
-    .Block {
-      background-color: #fff;
-      transition: color 0.2s ease;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
 
-    .PortfolioText {
-      color: #2196f3;
-      transition: color 0.2s ease;
+    &:hover {
+      > div {
+        background-color: #fff;
+        transition: background-color 0.2s ease-in-out;
+      }
+///!!! Doesn't work style span
+      > span {
+        color: #2196f3;
+        transition: color 0.2s ease-in-out;
+      }
     }
   }
 `;
 
-export const DevText = styled.span`
+export const DevText = styled.p`
   color: #212121;
 `;
 
@@ -32,11 +35,19 @@ export const Block = styled.div`
   align-items: center;
   padding: 0 5px;
   background-color: #2196f3;
-  height: 18px;
-  margin-top: 2px;
+  height: 22px;
+  /* margin-top: 2px; */
+
+  @media screen and (min-width: 768px) {
+    height: 18px;
+  }
 `;
 
 export const PortfolioText = styled.span`
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;

@@ -25,7 +25,7 @@ export const CardItem = styled.li`
   height: 430px;
 
   border: 1px solid #afb1b8;
-  border-radius: 4px;
+  border-radius: 8px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

@@ -6,28 +6,29 @@ export const Form = styled.form`
   min-width: 320px;
   max-width: 480px;
 
-  /* background-color: #eaedf1; */
+  background-color: #eaedf1;
 
   display: flex;
   flex-direction: column;
 
   box-sizing: border-box;
+  border-radius: 8px;
 
   padding: 8px 12px 0;
 
   @media screen and (max-width: 767px) {
     display: none;
-}
+  }
 
   @media screen and (min-width: 767px) {
     width: 342px;
   }
 
   @media screen and (min-width: 1279px) {
-    width: 596px;
+    width: 496px;
     max-width: none;
 
-    padding: 20px 48px 0;
+    padding: 20px 20px 0;
   }
 `;
 
@@ -35,7 +36,7 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
 
-  margin-top: 28px;
+  margin-top: 16px;
   color: #212121;
   text-align: justify;
   font-family: Fira Sans;
@@ -133,7 +134,7 @@ export const SendBtn = styled.button`
   line-height: 18px;
   letter-spacing: -0.64px;
 
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 
   cursor: pointer;
 
@@ -142,6 +143,14 @@ export const SendBtn = styled.button`
     color: #fff;
 
     transition: all 0.2s ease-in-out;
+
+    > span {
+      background: #fff;
+      stroke: #2196f3;
+      border: 1px solid #2196f3;
+
+      transition: all 0.2s ease-in-out;
+    }
   }
 
   @media screen and (min-width: 1279px) {
@@ -150,6 +159,7 @@ export const SendBtn = styled.button`
 `;
 
 export const ButtonImg = styled.span`
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
