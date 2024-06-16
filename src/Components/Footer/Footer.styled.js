@@ -70,11 +70,53 @@ export const LinkList = styled.ul`
 
 export const Item = styled.li``;
 
-export const GitLink = styled.a``;
+export const GitLink = styled.a`
+  fill: #2196f3;
 
-export const LinkedinLink = styled.a``;
+  &:hover ellipse {
+    fill: #2196f3;
 
-export const TelegramLink = styled.a``;
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover path {
+    fill: #fff;
+
+    transition: fill 0.2s ease-in-out;
+  }
+`;
+
+export const LinkedinLink = styled.a`
+  fill: #fff;
+
+  &:hover ellipse {
+    fill: #fff;
+
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover path {
+    fill: #2196f3;
+
+    transition: fill 0.2s ease-in-out;
+  }
+`;
+
+export const TelegramLink = styled.a`
+  fill: #2196f3;
+
+  &:hover ellipse {
+    fill: #fff;
+
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover path {
+    fill: #2196f3;
+
+    transition: fill 0.2s ease-in-out;
+  }
+`;
 
 export const Copyright = styled.span`
   grid-area: copyright;

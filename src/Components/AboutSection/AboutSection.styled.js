@@ -6,6 +6,9 @@ export const Section = styled.section`
 
   display: flex;
   flex-direction: column;
+  background-image: url('assets/images/about-background.jpg');
+  background-size: cover;
+  background-color: transparent;
 
   /* @media screen and (max-width: 480px) {
     !!! mobile-responsive 

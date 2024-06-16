@@ -42,7 +42,7 @@ function Footer() {
             href="https://www.linkedin.com/in/victor-avramidi-frontend-developer/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="LinkedIn"
           >
             <LinkedinImg />
           </LinkedinLink>
@@ -52,7 +52,7 @@ function Footer() {
             href="https://t.me/VictorAvramidi"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="Telegram"
           >
             <TelegramImg />
           </TelegramLink>

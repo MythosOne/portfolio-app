@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useFormik } from 'formik';
-import { nanoid } from 'nanoid';
+import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import {
   Form,
@@ -16,7 +16,6 @@ import {
 import { ArrowRightImg } from 'assets/icons/IconsComponent';
 
 export const ContactForm = () => {
-  const [contact, setContact] = useState([]);
 
   const ContactUsSchema = Yup.object().shape({
     name: Yup.string()
@@ -29,7 +28,7 @@ export const ContactForm = () => {
     phone: Yup.string()
       .matches(/^[+]?[0-9\s()-]+$/)
       .required('Required'),
-    description: Yup.string().min(10),
+    message: Yup.string().min(10),
   });
 
   const formik = useFormik({
@@ -37,12 +36,18 @@ export const ContactForm = () => {
       name: '',
       email: '',
       phone: '',
-      description: '',
+      message: '',
     },
 
-    onSubmit: values => {
-      setContact([...contact, { id: nanoid(), values }]);
-      formik.resetForm();
+    onSubmit: (values, { setSubmitting }) => {
+      emailjs.send('service_45u9lcx', 'template_jrg9y6t', values, 'QC1E43bEDd-hjrFSZ').then(responce => {
+        console.log("SUCCESS", responce.status, responce.text);
+        formik.resetForm();
+        setSubmitting(false);
+      }).catch(err => {
+        console.log("FAILED...", err);
+        setSubmitting(false)
+      });
     },
     validationSchema: ContactUsSchema,
   });
@@ -91,19 +96,19 @@ export const ContactForm = () => {
       <Label>
         Message:
         <InputMessage
-          name="description"
+          name="message"
           maxLength={200}
           placeholder="Your message"
           onChange={formik.handleChange}
-          value={formik.values.description}
-          error={formik.errors.description && formik.touched.description}
+          value={formik.values.message}
+          error={formik.errors.message && formik.touched.message}
         />
-        {formik.errors.description && formik.touched.description && (
+        {formik.errors.message && formik.touched.message && (
           <ErrorMessage>Min 10 symbols</ErrorMessage>
         )}
       </Label>
       <BlockBtn>
-        <SendBtn type="submit" title='Submit form'>
+        <SendBtn type="submit" title="Submit form">
           Send
           <ButtonImg>
             <ArrowRightImg width={'16'} height={'16'} />
