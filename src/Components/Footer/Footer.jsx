@@ -59,7 +59,7 @@ function Footer() {
         </Item>
       </LinkList>
       <Copyright>© 2024 All Rights Reserved Developed with by Mythos</Copyright>
-      <ArrowUpBtn href="#LocationWeather" title="Top of page">
+      <ArrowUpBtn href="#about" title="Top of page">
         <ArrowUpImg />
       </ArrowUpBtn>
     </Section>

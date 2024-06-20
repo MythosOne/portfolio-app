@@ -19,8 +19,8 @@ function AboutSection() {
         <AboutItem>
           <Picture>
             <AboutImage
-              width="240"
-              height="240"
+              // width="180"
+              // height="180"
               alt="about image"
               loading="lazy"
             ></AboutImage>
@@ -28,18 +28,7 @@ function AboutSection() {
         </AboutItem>
         <AboutItem>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est
-            laboriosam, accusamus illum dolore eum, repudiandae cupiditate non
-            tempora fuga quae. Autem, veniam eligendi unde laudantium, id amet,
-            voluptate expedita aliquam debitis repudiandae culpa maxime. Dolorum
-            in eveniet voluptates rerum dolores asperiores modi, numquam magni
-            laudantium eius earum. Eaque iusto dignissimos doloremque autem!
-            Atque facilis minima autem officia quas vero blanditiis architecto
-            facere tempora nostrum natus, voluptatem consectetur labore
-            perspiciatis assumenda sunt, enim voluptate mollitia, expedita
-            suscipit animi quibusdam! Aut, dolorem inventore harum facilis ea
-            iusto nostrum eius veniam fugiat modi quod eaque. Cupiditate neque
-            consequatur, voluptatibus blanditiis ratione deleniti.
+          I am a developer looking for a full-time job in a development campaign that develops interesting projects aimed at improving the quality of business and life. I have good knowledge of HTML5, CSS3, JavaScript and React technologies. I have experience in applying the Scrum methodology when working in a team. Responsible approach to the task, aimed at successful implementation. Continuous improvement of your professional skills.
           </Description>
         </AboutItem>
       </AboutList>

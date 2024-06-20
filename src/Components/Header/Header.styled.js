@@ -1,23 +1,29 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
+  margin: 0 auto;
   z-index: 1001;
+
+  box-sizing: border-box;
+
+  height: 50px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 10px;
+  padding: 0 10px;
   margin: 0 auto;
 
   backdrop-filter: blur(50px);
 
   @media screen and (min-width: 768px) {
     width: 728px;
-    height: 40px;
     justify-content: space-between;
     background-color: #fff;
 

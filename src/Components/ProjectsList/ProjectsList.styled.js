@@ -6,5 +6,9 @@ export const CardList = styled.ul`
     flex-wrap: wrap;
     justify-content: space-around;
 
+    background-color: #f5f4fa;
+    /* background-color: #eaedf1;  */
+    padding: 20px;
+
     margin-top: 20px;
 `;

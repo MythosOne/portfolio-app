@@ -27,6 +27,8 @@ export const CardItem = styled.li`
   border: 1px solid #afb1b8;
   border-radius: 8px;
 
+  background-color: #fff; 
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

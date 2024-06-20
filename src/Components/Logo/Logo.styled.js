@@ -12,7 +12,7 @@ export const LogoWrapper = styled.a`
   @media screen and (min-width: 768px) {
     font-size: 24px;
 
-    &:hover {
+    /* &:hover {
       > div {
         background-color: #fff;
         transition: background-color 0.2s ease-in-out;
@@ -22,7 +22,7 @@ export const LogoWrapper = styled.a`
         color: #2196f3;
         transition: color 0.2s ease-in-out;
       }
-    }
+    } */
   }
 `;
 

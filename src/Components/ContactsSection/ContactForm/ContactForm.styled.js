@@ -6,7 +6,8 @@ export const Form = styled.form`
   min-width: 320px;
   max-width: 480px;
 
-  background-color: #eaedf1;
+  background-color: #f5f4fa;
+  /* background-color: #eaedf1; */
 
   display: flex;
   flex-direction: column;
