@@ -42,7 +42,7 @@ export const CardItem = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    width: 330px;
+    width: 320px;
   }
 
   @media screen and (min-width: 1279px) {

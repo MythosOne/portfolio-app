@@ -43,7 +43,7 @@ export const AboutList = styled.ul`
 
     /* background-image: url(${backgroundImage}); */
 
-    height: 200px;
+    height: 198px;
 
     background-image: url(${require('../../assets/images/about-background-1440.jpg')});
 
