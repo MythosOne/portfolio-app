@@ -1,18 +1,20 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const CardList = styled.ul`
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
-    background-color: #f5f4fa;
-    /* background-color: #eaedf1;  */
-    padding: 20px;
+  border-radius: 10px;
 
-    margin-top: 20px;
+  background-color: #f5f4fa;
+  /* background-color: #eaedf1;  */
+  padding: 20px;
 
-    @media screen and (min-width: 768px) {
-        gap: 20px;
-    }
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
 `;

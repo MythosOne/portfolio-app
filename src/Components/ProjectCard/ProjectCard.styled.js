@@ -21,13 +21,14 @@ export const DescriptionBlock = styled.div`
 `;
 
 export const CardItem = styled.li`
+  overflow: hidden;
   width: 320px;
   height: 430px;
 
   border: 1px solid #afb1b8;
-  border-radius: 8px;
+  border-radius: 10px;
 
-  background-color: #fff; 
+  background-color: #fff;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

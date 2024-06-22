@@ -3,6 +3,7 @@ import foodsta from 'assets/images/foodsta.png';
 import ecosolution from 'assets/images/ecosolution.png';
 import weatherapp from 'assets/images/weatherapp.png';
 import phonebook from 'assets/images/phonebook.png';
+import project from 'assets/images/future-project.jpg';
 
 import {
   HtmlImg,
@@ -45,7 +46,7 @@ const projectsData = [
       'https://antonrybak25.github.io/team-project/index.html#customers',
     projectGit: 'https://github.com/AntonRybak25/team-project',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse ipsa maxime, quos animi neque.',
+      'The FoodStar website offers online food ordering services with an emphasis on fast delivery and a varied menu. Main sections include information about services, special offers, customer reviews and a subscription form to receive promotions. The website features images of various dishes and emphasizes the ease of ordering. The site is fully responsive, ensuring convenient use on any device.',
     techStack: [
       <HtmlImg width={'32'} />,
       <CssImg width={'32'} />,
@@ -87,12 +88,12 @@ const projectsData = [
   {
     id: 6,
     projectName: 'Future Project',
-    projectImg: '',
+    projectImg: project,
     projectUrl: 'http://',
     projectGit: 'http://',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse ipsa maxime, quos animi neque.',
-    techStack: ['imgStack', 'imgStack', 'imgStack', 'imgStack', 'imgStack'],
+      'New project coming soonю',
+    techStack: [<ReactImg width={'32'}/>],
   },
 ];
 
