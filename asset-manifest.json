@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.eb62bb3e.css",
-    "main.js": "/portfolio-app/static/js/main.183d5558.js",
+    "main.css": "/portfolio-app/static/css/main.5bcb033c.css",
+    "main.js": "/portfolio-app/static/js/main.e0324645.js",
     "static/media/phonebook.png": "/portfolio-app/static/media/phonebook.7e7f6fb4793b65691de4.png",
     "static/media/webstudio.png": "/portfolio-app/static/media/webstudio.189265ef4794250dae91.png",
     "static/media/ecosolution.png": "/portfolio-app/static/media/ecosolution.5a59bbf2ac755746f29f.png",
     "static/media/weatherapp.png": "/portfolio-app/static/media/weatherapp.b698bf928cc3308eb9bf.png",
     "static/media/foodsta.png": "/portfolio-app/static/media/foodsta.f49f85f9ec14891af580.png",
-    "static/media/about-background.jpg": "/portfolio-app/static/media/about-background.acd19b76449c853a9874.jpg",
+    "static/media/future-project.jpg": "/portfolio-app/static/media/future-project.8cba7ad67949eb43ede6.jpg",
     "static/media/about-background-1440.jpg": "/portfolio-app/static/media/about-background-1440.bdbdb2cc1f8fb14c7ec7.jpg",
+    "static/media/about-victor.jpg": "/portfolio-app/static/media/about-victor.a13ef684b64a9944da99.jpg",
     "index.html": "/portfolio-app/index.html",
-    "main.eb62bb3e.css.map": "/portfolio-app/static/css/main.eb62bb3e.css.map",
-    "main.183d5558.js.map": "/portfolio-app/static/js/main.183d5558.js.map"
+    "main.5bcb033c.css.map": "/portfolio-app/static/css/main.5bcb033c.css.map",
+    "main.e0324645.js.map": "/portfolio-app/static/js/main.e0324645.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb62bb3e.css",
-    "static/js/main.183d5558.js"
+    "static/css/main.5bcb033c.css",
+    "static/js/main.e0324645.js"
   ]
 }
