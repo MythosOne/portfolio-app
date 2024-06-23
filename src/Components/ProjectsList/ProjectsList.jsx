@@ -7,7 +7,6 @@ import projectsData from 'data/projects-data';
 import {CardList} from './ProjectsList.styled';
 
 function ProjectsList() {
-  console.log('projectsData', projectsData);
 
   return (
     <CardList>

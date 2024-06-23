@@ -16,10 +16,9 @@ import {
 import { ArrowRightImg } from 'assets/icons/IconsComponent';
 
 export const ContactForm = () => {
-
   const ContactUsSchema = Yup.object().shape({
     name: Yup.string()
-      .matches(/^[a-zA-Zа-яА-ЯёЁ]+$/)
+      .matches(/^[a-zA-Zа-яА-ЯёЁ\s]+$/)
       .required('Required')
       .min(2),
     email: Yup.string()
@@ -28,7 +27,7 @@ export const ContactForm = () => {
     phone: Yup.string()
       .matches(/^[+]?[0-9\s()-]+$/)
       .required('Required'),
-    message: Yup.string().min(10),
+    message: Yup.string().required('Required').min(10),
   });
 
   const formik = useFormik({
@@ -39,15 +38,23 @@ export const ContactForm = () => {
       message: '',
     },
 
-    onSubmit: (values, { setSubmitting }) => {
-      emailjs.send('service_45u9lcx', 'template_jrg9y6t', values, 'QC1E43bEDd-hjrFSZ').then(responce => {
-        console.log("SUCCESS", responce.status, responce.text);
-        formik.resetForm();
+    onSubmit: async (values, { setSubmitting, resetForm }) => {
+      try {
+        const response = await emailjs.send(
+          'service_45u9lcx',
+          'template_jrg9y6t',
+          values,
+          'QC1E43bEDd-hjrFSZ'
+        );
+        console.log('SUCCESS', response.status, response.text);
+        resetForm();
+        alert('Your message has been sent.');
+      } catch (error) {
+        console.log('FAILED...', error);
+        alert('The message was not sent. Try again. Thank you.');
+      } finally {
         setSubmitting(false);
-      }).catch(err => {
-        console.log("FAILED...", err);
-        setSubmitting(false)
-      });
+      }
     },
     validationSchema: ContactUsSchema,
   });

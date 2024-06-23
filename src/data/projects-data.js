@@ -92,7 +92,7 @@ const projectsData = [
     projectUrl: 'http://',
     projectGit: 'http://',
     description:
-      'New project coming soonю',
+      'New project coming soon.',
     techStack: [<ReactImg width={'32'}/>],
   },
 ];

@@ -74,7 +74,6 @@ export const GitLink = styled.a`
   fill: #2196f3;
 
   &:hover ellipse {
-    fill: #2196f3;
 
     transition: fill 0.2s ease-in-out;
   }

@@ -64,8 +64,21 @@ export const AboutList = styled.ul`
   }
 `;
 
+const fadeIn = keyframes` 
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 export const AboutItem = styled.li`
   position: relative;
+
+  animation: ${fadeIn} 1s ease forwards;
 `;
 
 const borderBlock = keyframes`
@@ -98,7 +111,7 @@ export const BlockColor = styled.div`
     height: 300px;
   }
 
-  animation: ${borderBlock} 18s ease-in-out infinite 1s;
+  animation: ${borderBlock} 16s ease-in-out infinite 1s;
   opacity: 0.85;
 `;
 

@@ -7,8 +7,6 @@ import './App.styled.js';
 
 function App() {
   const [isVisible, setIsVisible] = useState(window.innerWidth <= 767);
-  console.log('isVisible:', isVisible);
-
   const handleResize = useCallback(() => {
     setTimeout(() => {
       setIsVisible(window.innerWidth <= 767);
