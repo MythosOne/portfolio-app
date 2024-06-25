@@ -1,6 +1,37 @@
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 
+const borderPicture = keyframes`
+    0% {
+      border-color: #fff;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+      border-color: #2196f3;
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+      border-color: #fff;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+`;
+
+const borderBlock = keyframes`
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+`;
+
 export const Section = styled.section`
   max-width: 440px;
   width: 100%;
@@ -26,7 +57,10 @@ export const Section = styled.section`
   }
 `;
 
-export const TitleSection = styled.h2``;
+export const TitleSection = styled.h2`
+  font-family: 'Nanum Gothic';
+  font-size: 24px;
+`;
 
 export const AboutList = styled.ul`
   display: flex;
@@ -81,25 +115,10 @@ export const AboutItem = styled.li`
   animation: ${fadeIn} 1s ease forwards;
 `;
 
-const borderBlock = keyframes`
-    0% {
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50% {
-      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    100% {
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-`;
-
 export const BlockColor = styled.div`
   width: 350px;
   height: 360px;
   background: #2196f3;
-  /* border: 8px solid gray; */
 
   @media screen and (min-width: 768px) {
     width: 200px;
@@ -111,7 +130,8 @@ export const BlockColor = styled.div`
     height: 300px;
   }
 
-  animation: ${borderBlock} 16s ease-in-out infinite 1s;
+  animation: ${borderBlock} 16s ease-in-out infinite;
+
   opacity: 0.85;
 `;
 
@@ -122,25 +142,8 @@ export const Picture = styled.picture`
   z-index: 100;
 `;
 
-const border = keyframes`
-    0% {
-      border-color: #fff;
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50% {
-      border-color: #2196f3;
-      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    100% {
-      border-color: #fff;
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-`;
-
 export const AboutImage = styled.img`
-  background-size: cover;
+  /* background-size: cover; */
   width: 340px;
   height: 350px;
   border: 8px solid gray;
@@ -155,15 +158,16 @@ export const AboutImage = styled.img`
     height: 300px;
   }
 
-  animation: ${border} 8s ease-in-out infinite 1s;
+  animation: ${borderPicture} 8s ease-in-out infinite;
   opacity: 0.95;
 `;
 
 export const Description = styled.p`
-  text-indent: 1.4em;
-  text-align: justify;
+  font-family: 'Roboto Flex';
   font-size: 16px;
   line-height: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
 
   @media screen and (min-width: 768px) {
     color: #fff;
@@ -171,7 +175,7 @@ export const Description = styled.p`
   }
 
   @media screen and (min-width: 1279px) {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.6em;
   }
 `;

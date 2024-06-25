@@ -19,6 +19,7 @@ height: 20px;
 `;
 
 export const NavListItemLink = styled.a`
+  font-family: 'Roboto Flex';
   font-size: 18px;
   color: #212121;
   font-weight: 500;
