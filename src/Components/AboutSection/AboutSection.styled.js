@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
+import { theme } from 'theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 const borderPicture = keyframes`
     0% {
@@ -58,8 +60,9 @@ export const Section = styled.section`
 `;
 
 export const TitleSection = styled.h2`
-  font-family: 'Nanum Gothic';
+  font-family: ${fonts.first};
   font-size: 24px;
+  font-weight: ${fontWeights.bold};
 `;
 
 export const AboutList = styled.ul`

@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { theme } from 'theme/theme';
+const { fonts, fontWeights} = theme;
 
 export const Section = styled.footer`
   display: none;
@@ -121,9 +123,10 @@ export const Copyright = styled.span`
   grid-area: copyright;
   text-align: center;
 
-  font-size: 10px;
+  font-family: ${fonts.second};
+  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${fontWeights.regular};
   line-height: 1.15;
 
   color: #212121;

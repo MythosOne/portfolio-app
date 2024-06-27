@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { theme } from '../../theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const Section = styled.section`
   max-width: 440px;
@@ -14,4 +16,8 @@ export const Section = styled.section`
   }
 `;
 
-export const TitleSection = styled.h2``;
+export const TitleSection = styled.h2`
+  font-family: ${fonts.first};
+  font-size: 24px;
+  font-weight: ${fontWeights.bold};
+`;

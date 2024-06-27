@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { theme } from 'theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const Form = styled.form`
   grid-area: form;
@@ -40,10 +42,10 @@ export const Label = styled.label`
   margin-top: 16px;
   color: #212121;
   text-align: justify;
-  font-family: Fira Sans;
+  font-family: ${fonts.second};
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${fontWeights.regular };
   line-height: normal;
   letter-spacing: -0.64px;
 `;
@@ -90,10 +92,10 @@ export const InputMessage = styled.textarea`
   height: 149px;
 
   color: #212121;
-  font-family: Fira Sans;
+  font-family: ${fonts.second};
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${fontWeights.regular };
   line-height: normal;
   letter-spacing: -0.72px;
 
@@ -128,12 +130,11 @@ export const SendBtn = styled.button`
   background-color: #fff;
 
   color: #212121;
-  font-family: Fira Sans;
+  font-family: ${fonts.second};
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${fontWeights.regular };
   line-height: 18px;
-  letter-spacing: -0.64px;
 
   margin-bottom: 16px;
 

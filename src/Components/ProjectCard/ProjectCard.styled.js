@@ -1,5 +1,7 @@
 // import styled from '@emotion/styled';
 import styled from '@emotion/styled/macro';
+import { theme } from 'theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const DescriptionBlock = styled.div`
   position: absolute;
@@ -34,19 +36,18 @@ export const CardItem = styled.li`
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: ${shadows.hoverShadow};
   }
 
   &:hover ${DescriptionBlock} {
     transform: translateY(0);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.mobile}) {
     width: 320px;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 370px;
   }
 `;
@@ -98,26 +99,29 @@ export const UrlBlock = styled.div`
 `;
 
 export const WebsiteLink = styled.a`
+  font-family: ${fonts.first};
   color: #000;
-  font-weight: 700;
+  font-weight: ${fontWeights.extrabold};
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
   &:hover {
-    color: #2196f3;
+    color: ${colors.accent};
     transition: color 0.2s ease;
   }
 `;
 
 export const GitLink = styled.a`
+  font-family: ${fonts.first};
   color: #808080;
   font-size: 16px;
   line-height: 1.87;
+  font-weight: ${fontWeights.semibold};
   letter-spacing: 0.03em;
 
   &:hover {
-    color: #2196f3;
+    color: ${colors.accent};
     transition: color 0.2s ease;
   }
 `;

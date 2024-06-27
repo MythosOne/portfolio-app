@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { theme } from '../../theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const Section = styled.section`
   max-width: 440px;
@@ -18,7 +20,11 @@ export const Section = styled.section`
   }
 `;
 
-export const Title = styled.h2``;
+export const Title = styled.h2`
+  font-family: ${fonts.first};
+  font-size: 24px;
+  font-weight: ${fontWeights.bold};
+`;
 
 export const ContactBLock = styled.div`
   display: flex;
@@ -43,7 +49,11 @@ export const PhoneItem = styled.li`
 `;
 
 export const TitleLine = styled.h3`
-font-size: 18px;
+  font-family: ${fonts.second};
+  font-size: 16px;
+  font-style: normal;
+  font-weight: ${fontWeights.regular};
+  line-height: normal;
 `;
 
 export const Link = styled.a`
@@ -54,10 +64,10 @@ export const Link = styled.a`
   color: #212121;
 
   text-align: justify;
-  /* font-family: Fira Sans; */
+  font-family: ${fonts.second};
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${fontWeights.regular};
   line-height: normal;
 
   text-decoration: none;

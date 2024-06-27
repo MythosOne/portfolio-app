@@ -57,7 +57,7 @@ const projectsData = [
   },
   {
     id: 3,
-    projectName: 'Ecocolution',
+    projectName: 'Ecosolution',
     projectImg: ecosolution,
     projectUrl: 'https://mythosone.github.io/ecosolution-app/#main',
     projectGit: 'https://github.com/MythosOne/ecosolution-app',
