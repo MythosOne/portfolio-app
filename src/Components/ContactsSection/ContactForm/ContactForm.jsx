@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import { useFormik } from 'formik';
 import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
+import { AppContext } from '../../App/App';
+
 import {
   Form,
   Label,
@@ -16,6 +18,8 @@ import {
 import { ArrowRightImg } from 'assets/icons/IconsComponent';
 
 export const ContactForm = () => {
+  const { toast, setToast } = useContext(AppContext);
+
   const ContactUsSchema = Yup.object().shape({
     name: Yup.string()
       .matches(/^[a-zA-Zа-яА-ЯёЁ\s]+$/)
@@ -48,10 +52,16 @@ export const ContactForm = () => {
         );
         console.log('SUCCESS', response.status, response.text);
         resetForm();
-        alert('Your message has been sent.');
+        setToast({
+          status: 'success',
+          messageText: 'Your message has been sent.',
+        });
       } catch (error) {
         console.log('FAILED...', error);
-        alert('The message was not sent. Try again. Thank you.');
+        setToast({
+          status: 'error',
+          messageText: 'The message was not sent. Try again. Thank you.',
+        });
       } finally {
         setSubmitting(false);
       }

@@ -54,10 +54,10 @@ export const Input = styled.input`
   height: 36px;
 
   color: #212121;
-  font-family: Fira Sans;
+  font-family: ${fonts.second};
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: ${fontWeights.regular };
   line-height: normal;
   letter-spacing: -0.72px;
 
