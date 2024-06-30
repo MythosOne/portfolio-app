@@ -11,6 +11,7 @@ export const AppContext = createContext();
 function App() {
   const [toast, setToast] = useState({});
   const [isVisible, setIsVisible] = useState(window.innerWidth <= 767);
+  
   const handleResize = useCallback(() => {
     setTimeout(() => {
       setIsVisible(window.innerWidth <= 767);
@@ -30,7 +31,7 @@ function App() {
       <AppContext.Provider value={{ toast, setToast }}>
         <Header />
         {isVisible && <BottomNav />}
-        <Toastify message={toast}/>
+        <Toastify key={toast.id} message={toast}/>
         <HomePage />
         <Footer />
       </AppContext.Provider>

@@ -5,13 +5,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Toastify({ message }) {
-    const {status, messageText} = message;
+    const {id, status, messageText} = message;
 
     const notify = () => {
-    
         toast[status](`${messageText}`, {
           position: 'top-center',
-          autoClose: 5000,
+          autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -22,10 +21,10 @@ function Toastify({ message }) {
       };
 
   useEffect(() => {
-    if (status) {
+    if (status && messageText) {
       notify();
     }
-  });
+  },[id, status, messageText]);
 
   return (
     <>

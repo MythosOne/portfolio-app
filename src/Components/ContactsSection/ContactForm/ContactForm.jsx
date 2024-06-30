@@ -4,6 +4,8 @@ import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import { AppContext } from '../../App/App';
 
+import { nanoid } from 'nanoid'
+
 import {
   Form,
   Label,
@@ -53,12 +55,14 @@ export const ContactForm = () => {
         console.log('SUCCESS', response.status, response.text);
         resetForm();
         setToast({
+          id: nanoid(),
           status: 'success',
           messageText: 'Your message has been sent.',
         });
       } catch (error) {
         console.log('FAILED...', error);
         setToast({
+          id: nanoid(),
           status: 'error',
           messageText: 'The message was not sent. Try again. Thank you.',
         });
