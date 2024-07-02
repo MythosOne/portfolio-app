@@ -52,7 +52,7 @@ export const ContactForm = () => {
           values,
           'QC1E43bEDd-hjrFSZ'
         );
-        console.log('SUCCESS', response.status, response.text);
+        console.info('SUCCESS', response.status, response.text);
         resetForm();
         setToast({
           id: nanoid(),
@@ -60,7 +60,7 @@ export const ContactForm = () => {
           messageText: 'Your message has been sent.',
         });
       } catch (error) {
-        console.log('FAILED...', error);
+        console.error('FAILED...', error.status, error.text);
         setToast({
           id: nanoid(),
           status: 'error',

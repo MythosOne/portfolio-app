@@ -1,11 +1,5 @@
 import React from 'react';
 
-//!!! Header
-
-//!!! Nav
-
-//!!! AboutSection
-
 //!!! TechStackSection and ProjectsSection
 
 export const HtmlImg = ({ width }) => {
@@ -539,56 +533,162 @@ export const EmailImg = ({ stroke }) => {
 };
 
 //!!!
-export const LinkedinImgContact = ({ stroke, fill }) => {
+// export const LinkedinImgContact = ({ stroke, fill }) => {
+//   return (
+//     <svg
+//       xmlns="http://www.w3.org/2000/svg"
+//       fill="none"
+//       height="36"
+//       width="36"
+//       strokeWidth="34"
+//       viewBox="0 0 1080 1080"
+//     >
+//       <rect
+//         height="760"
+//         rx="136.5"
+//         stroke={stroke}
+//         strokeWidth="44"
+//         width="760"
+//         x="157.5"
+//         y="159.5"
+//       />
+//       <path
+//         d="M364.143 372H421.143V426H364.143V372ZM364.143 470.5H421.143V729H364.143V470.5ZM483.248 470.5H537.248V508.5L538.248 509.5C546.915 495.167 558.248 484 572.248 476C586.248 467.667 601.748 463.5 618.748 463.5C647.081 463.5 669.415 470.833 685.748 485.5C702.081 500.167 710.248 522.167 710.248 551.5V729H653.248V566.5C652.581 546.167 648.248 531.5 640.248 522.5C632.248 513.167 619.748 508.5 602.748 508.5C593.081 508.5 584.415 510.333 576.748 514C569.081 517.333 562.581 522.167 557.248 528.5C551.915 534.5 547.748 541.667 544.748 550C541.748 558.333 540.248 567.167 540.248 576.5V729H483.248V470.5Z"
+//         fill={fill}
+//       />
+//     </svg>
+//   );
+// };
+
+// export const TelegramImgContact = ({ stroke, fill }) => {
+//   return (
+//     <svg
+//       xmlns="http://www.w3.org/2000/svg"
+//       fill="none"
+//       height="36"
+//       width="36"
+//       strokeWidth="34"
+//       viewBox="0 0 1080 1080"
+//     >
+//       <path
+//         d="M729.796 386.21L662.016 705.86C656.902 728.42 643.567 734.032 624.616 723.408L521.342 647.304L471.512 695.231C465.998 700.745 461.384 705.359 450.756 705.359L458.176 600.178L649.583 427.219C657.907 419.799 647.779 415.688 636.649 423.108L400.021 572.103L298.151 540.22C275.992 533.3 275.593 518.06 302.763 507.433L701.219 353.924C719.667 347.007 735.81 358.035 729.796 386.21Z"
+//         fill={fill}
+//       />
+//       <rect
+//         height="760"
+//         rx="380"
+//         stroke={stroke}
+//         strokeWidth="44"
+//         width="760"
+//         x="157.5"
+//         y="159.5"
+//       />
+//     </svg>
+//   );
+// };
+
+export const ViberContactImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      height="36"
-      width="36"
-      strokeWidth="34"
-      viewBox="0 0 1080 1080"
+      viewBox="0 0 512 512"
+      width="28"
+      height="28"
+      fill="#fff"
     >
-      <rect
-        height="760"
-        rx="136.5"
-        stroke={stroke}
-        strokeWidth="44"
-        width="760"
-        x="157.5"
-        y="159.5"
+      <rect width="512" height="512" rx="15%" fill="#665ca7" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="10"
+        d="M269 186a30 30 0 0 1 31 31m-38-58a64 64 0 0 1 64 67m-73-93a97 97 0 0 1 99 104"
       />
       <path
-        d="M364.143 372H421.143V426H364.143V372ZM364.143 470.5H421.143V729H364.143V470.5ZM483.248 470.5H537.248V508.5L538.248 509.5C546.915 495.167 558.248 484 572.248 476C586.248 467.667 601.748 463.5 618.748 463.5C647.081 463.5 669.415 470.833 685.748 485.5C702.081 500.167 710.248 522.167 710.248 551.5V729H653.248V566.5C652.581 546.167 648.248 531.5 640.248 522.5C632.248 513.167 619.748 508.5 602.748 508.5C593.081 508.5 584.415 510.333 576.748 514C569.081 517.333 562.581 522.167 557.248 528.5C551.915 534.5 547.748 541.667 544.748 550C541.748 558.333 540.248 567.167 540.248 576.5V729H483.248V470.5Z"
-        fill={fill}
+        fillRule="evenodd"
+        d="M95 232c0-91 17-147 161-147s161 56 161 147-17 147-161 147l-26-1-53 63c-4 4-8 1-8-3v-69c-6 0-31-12-38-19-22-23-36-40-36-118zm-30 0c0-126 55-177 191-177s191 51 191 177-55 177-191 177c-10 0-18 0-32-2l-38 43c-7 8-28 11-28-13v-42c-6 0-20-6-39-18-19-13-54-44-54-145zm223 42q10-13 24-4l36 27q8 10-7 28t-28 15q-53-12-102-60t-61-104q0-20 25-34 13-9 22 5l25 35q6 12-7 22c-39 15 51 112 73 70z"
       />
     </svg>
   );
 };
 
-export const TelegramImgContact = ({ stroke, fill }) => {
+export const TelegramContactImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      height="36"
-      width="36"
-      strokeWidth="34"
-      viewBox="0 0 1080 1080"
+      aria-label="Telegram"
+      role="img"
+      viewBox="0 0 512 512"
+      width="28"
     >
+      <rect width="512" height="512" rx="15%" fill="#37aee2" />
+      <path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144" />
+      <path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34" />
       <path
-        d="M729.796 386.21L662.016 705.86C656.902 728.42 643.567 734.032 624.616 723.408L521.342 647.304L471.512 695.231C465.998 700.745 461.384 705.359 450.756 705.359L458.176 600.178L649.583 427.219C657.907 419.799 647.779 415.688 636.649 423.108L400.021 572.103L298.151 540.22C275.992 533.3 275.593 518.06 302.763 507.433L701.219 353.924C719.667 347.007 735.81 358.035 729.796 386.21Z"
-        fill={fill}
+        fill="#f6fbfe"
+        d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
       />
-      <rect
-        height="760"
-        rx="380"
-        stroke={stroke}
-        strokeWidth="44"
-        width="760"
-        x="157.5"
-        y="159.5"
-      />
+    </svg>
+  );
+};
+
+export const WhatsAppContactImg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+      width="28"
+    >
+      <defs>
+        <style>{`.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}`}</style>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="linear-gradient"
+          x1="32"
+          x2="32"
+          y1="4"
+          y2="64.81"
+        >
+          <stop offset="0" stopColor="#1df47c" />
+          <stop offset="0.31" stopColor="#12df63" />
+          <stop offset="0.75" stopColor="#05c443" />
+          <stop offset="1" stopColor="#00ba37" />
+        </linearGradient>
+      </defs>
+      <title />
+      <g data-name="23-whatsapp" id="_23-whatsapp">
+        <rect className="cls-1" height="64" rx="11.2" ry="11.2" width="64" />
+        <path
+          className="cls-2"
+          d="M27.42,21.38l2,5.43a.76.76,0,0,1-.1.74,10.32,10.32,0,0,1-1.48,1.71.8.8,0,0,0-.16,1.09C28.91,32,32.1,36,36.25,37.43a.79.79,0,0,0,.89-.29l1.66-2.21a.8.8,0,0,1,1-.23L45,37.3a.79.79,0,0,1,.4,1c-.57,1.62-2.36,5.57-6.19,4.93A20.79,20.79,0,0,1,26.4,36c-3.14-3.92-9.34-14,.19-15.14A.8.8,0,0,1,27.42,21.38Z"
+        />
+        <path
+          className="cls-2"
+          d="M33.6,54.8a24.21,24.21,0,0,1-11.94-3.13l-12,3.08,4.41-9.91A22,22,0,0,1,10,32C10,19.43,20.59,9.2,33.6,9.2S57.2,19.43,57.2,32,46.61,54.8,33.6,54.8ZM22.29,47.37l.73.45a20.13,20.13,0,0,0,10.58,3c10.81,0,19.6-8.43,19.6-18.8S44.41,13.2,33.6,13.2,14,21.63,14,32a18.13,18.13,0,0,0,4,11.34l.75.95-3.61,6.12Z"
+        />
+      </g>
+    </svg>
+  );
+};
+
+export const LinkedinContactImg = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28px">
+      
+      <defs>
+        <style>{`.cls-1{fill="#007fb5"}.cls-2{fill="#fff"}`}</style>
+      </defs>
+      <title />
+      <g data-name="14-linkedin" id="_14-linkedin">
+        <rect className="cls-1" height="64" rx="11.2" ry="11.2" width="64" />
+        <rect className="cls-2" height="32.72" width="9.03" x="8.99" y="23.54" />
+        <path
+          className="cls-2"
+          d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"
+        />
+        <circle className="cls-2" cx="13.5" cy="13.38" r="5.64" />
+      </g>
     </svg>
   );
 };
@@ -634,76 +734,6 @@ export const GitImg = ({ fill }) => {
     </svg>
   );
 };
-
-///!!!
-export const GitImgOne = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-    </svg>
-  );
-};
-
-export const GitImgTwo = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      // xmlns:xlink="http://www.w3.org/1999/xlink"
-      version="1.1"
-      id="Layer_1"
-      x="0px"
-      y="0px"
-      width="21px"
-      height="21px"
-      viewBox="0 0 21 21"
-      enableBackground="new 0 0 21 21"
-      // xml:space="preserve"
-    >
-      <g id="icon">
-        <circle
-          cx="10.5"
-          cy="10.5"
-          r="10"
-          fill="none"
-          stroke="#434A54"
-          strokeWidth="1"
-          strokeLinecap="round"
-          strokeMiterlimit="1"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M8.5483,15.7513c0.0034,0.6692,0.0109,1.6183,0.0109,1.8092"
-          fill="none"
-          stroke="#434A54"
-          strokeWidth="1"
-          strokeLinecap="round"
-          strokeMiterlimit="1"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M12.5297,17.5168c0,-0.2517,0.0089,-1.6461,0.0089,-2.6686c0,-0.7129,-0.2442,-1.178,-0.5183,-1.4152c1.7017,-0.1892,3.4895,-0.8355,3.4895,-3.7707c0,-0.8344,-0.2965,-1.5161,-0.7865,-2.0512c0.0794,-0.1925,0.341,-0.9698,-0.0749,-2.0224c0,0,-0.6408,-0.2054,-2.0995,0.7834c-0.6107,-0.1694,-1.365,-0.2542,-2.0145,-0.2571c-0.6495,0.0029,-1.4032,0.0877,-2.0128,0.2571c-1.4604,-0.9888,-2.1021,-0.7834,-2.1021,-0.7834c-0.4149,1.0527,-0.1534,1.8299,-0.074,2.0224c-0.4889,0.5352,-0.7874,1.2169,-0.7874,2.0512c0,2.9282,1.7844,3.5835,3.4818,3.7768c-0.2185,0.1908,-0.3166,1.5795,-0.3852,2.0735c-0.4361,0.1952,-1.5423,0.533,-2.2239,-0.6353c0,0,-0.4041,-0.7336,-1.1715,-0.7876"
-          fill="none"
-          stroke="#434A54"
-          strokeWidth="1"
-          strokeLinecap="round"
-          strokeMiterlimit="1"
-          strokeLinejoin="round"
-        />
-      </g>
-    </svg>
-  );
-};
-///!!!
 
 export const LinkedinImg = ({ fill }) => {
   return (

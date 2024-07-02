@@ -5,7 +5,6 @@ import {
   Section,
   Title,
   ContactBLock,
-  // Address,
   ContactList,
   PhoneItem,
   TitleLine,
@@ -15,16 +14,22 @@ import {
   NetworkList,
   LinkedinItem,
   TelegramItem,
+  ViberItem,
+  WhatsAppItem,
   LinkedinLink,
   TelegramLink,
+  ViberLink,
+  WhatsAppLink,
 } from './ContactsSection.styled.js';
 
 import { ContactForm } from './ContactForm/ContactForm.jsx';
 import {
   PhoneImg,
   EmailImg,
-  LinkedinImgContact,
-  TelegramImgContact,
+  LinkedinContactImg,
+  TelegramContactImg,
+  ViberContactImg,
+  WhatsAppContactImg,
 } from '../../assets/icons/IconsComponent.jsx';
 
 function ContactsSection() {
@@ -56,7 +61,7 @@ function ContactsSection() {
                   rel="noopener noreferrer"
                   aria-label="Linkedin"
                 >
-                  <LinkedinImgContact />
+                  <LinkedinContactImg />
                 </LinkedinLink>
               </LinkedinItem>
               <TelegramItem>
@@ -66,9 +71,29 @@ function ContactsSection() {
                   rel="noopener noreferrer"
                   aria-label="Telegram"
                 >
-                  <TelegramImgContact />
+                  <TelegramContactImg />
                 </TelegramLink>
               </TelegramItem>
+              <ViberItem>
+                <ViberLink
+                  href="viber://chat?number=%2B380979835601"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Telegram"
+                >
+                  <ViberContactImg />
+                </ViberLink>
+              </ViberItem>
+              <WhatsAppItem>
+                <WhatsAppLink
+                  href="https://wa.me/380979835601"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Telegram"
+                >
+                  <WhatsAppContactImg />
+                </WhatsAppLink>
+              </WhatsAppItem>
             </NetworkList>
           </SocialItem>
         </ContactList>

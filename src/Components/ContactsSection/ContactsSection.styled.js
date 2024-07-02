@@ -106,8 +106,12 @@ export const LinkedinItem = styled.li``;
 
 export const TelegramItem = styled.li``;
 
+export const ViberItem = styled.li``;
+
+export const WhatsAppItem = styled.li``;
+
 export const LinkedinLink = styled.a`
-  stroke: #212121;
+  /* stroke: #212121;
   fill: #212121;
 
   &:hover {
@@ -115,11 +119,11 @@ export const LinkedinLink = styled.a`
     fill: #2196f3;
 
     transition: all 0.2s ease-in-out;
-  }
+  } */
 `;
 
 export const TelegramLink = styled.a`
-  stroke: #212121;
+  /* stroke: #212121;
   fill: #212121;
 
   &:hover {
@@ -127,5 +131,9 @@ export const TelegramLink = styled.a`
     fill: #2196f3;
 
     transition: all 0.2s ease-in-out;
-  }
+  } */
 `;
+
+export const ViberLink = styled.a``;
+
+export const WhatsAppLink = styled.a``;
