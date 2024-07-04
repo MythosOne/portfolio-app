@@ -9,7 +9,7 @@ export const CardList = styled.ul`
   border-radius: 10px;
 
   background-color: #f5f4fa;
-  /* background-color: #eaedf1;  */
+
   padding: 20px;
 
   margin-top: 20px;

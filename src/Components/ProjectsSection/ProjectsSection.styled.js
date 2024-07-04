@@ -4,7 +4,7 @@ const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const Section = styled.section`
   max-width: 440px;
-  /* width: 100%; */
+  width: 100%;
   
   @media screen and (min-width: 768px) {
     max-width: none;

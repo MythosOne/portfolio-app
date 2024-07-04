@@ -45,7 +45,7 @@ export const Section = styled.section`
 
   margin-top: 80px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     max-width: none;
     width: 708px;
 
@@ -54,7 +54,7 @@ export const Section = styled.section`
     align-items: flex-start;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 1240px;
   }
 `;
@@ -74,7 +74,7 @@ export const AboutList = styled.ul`
 
   margin-top: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     flex-direction: row;
     box-sizing: border-box;
     padding: 10px;
@@ -92,7 +92,7 @@ export const AboutList = styled.ul`
     background-color: #2196f3;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     height: 345px;
 
     padding: 20px;
@@ -123,12 +123,12 @@ export const BlockColor = styled.div`
   height: 360px;
   background: #2196f3;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     width: 200px;
     height: 200px;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 300px;
     height: 300px;
   }
@@ -151,12 +151,12 @@ export const AboutImage = styled.img`
   height: 350px;
   border: 8px solid gray;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     width: 200px;
     height: 210px;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 300px;
     height: 300px;
   }
@@ -172,12 +172,12 @@ export const Description = styled.p`
   text-indent: 1.4em;
   text-align: justify;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     color: #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     font-size: 22px;
     line-height: 1.6em;
   }
