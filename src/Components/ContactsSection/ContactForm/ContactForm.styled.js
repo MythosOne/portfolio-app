@@ -21,13 +21,10 @@ export const Form = styled.form`
 
   @media screen and (max-width: 767px) {
     display: none;
-  }
-
-  @media screen and (min-width: 767px) {
     width: 342px;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 496px;
     max-width: none;
 
@@ -67,7 +64,7 @@ export const Input = styled.input`
   border-bottom: 1px solid;
   border-color: ${props => (!props.error ? '#2196f3' : '#d28b8b')};
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     font-size: 20px;
     letter-spacing: -0.8px;
 
@@ -112,7 +109,7 @@ export const BlockBtn = styled.div`
 `;
 
 export const SendBtn = styled.button`
-  margin-top: 16px;
+  margin: 16px 0;
 
   padding: 3px;
 
@@ -136,8 +133,6 @@ export const SendBtn = styled.button`
   font-weight: ${fontWeights.regular };
   line-height: 18px;
 
-  margin-bottom: 16px;
-
   cursor: pointer;
 
   &:hover {
@@ -155,7 +150,7 @@ export const SendBtn = styled.button`
     }
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     margin: 32px 0 48px;
   }
 `;

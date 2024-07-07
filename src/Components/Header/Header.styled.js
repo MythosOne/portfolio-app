@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { theme } from 'theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const Section = styled.header`
   position: fixed;
@@ -22,7 +24,7 @@ export const Section = styled.header`
 
   backdrop-filter: blur(50px);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     width: 728px;
     justify-content: space-between;
     background-color: #fff;
@@ -31,7 +33,7 @@ export const Section = styled.header`
     border-image: radial-gradient(circle, #2196f3, transparent) 1 0%
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 1240px;
     height: 60px;
   }

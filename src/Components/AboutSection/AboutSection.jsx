@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AboutImg from '../../assets/images/about-victor.jpg';
+import ResumeButton from './ResumeButton/ResumeButton';
+
+import AboutImg from 'assets/images/about-victor.jpg';
 
 import {
   Section,
   TitleSection,
   AboutList,
-  AboutItem,
+  AboutItemImg,
+  AboutItemDescription,
   BlockColor,
   Picture,
   AboutImage,
@@ -19,13 +22,13 @@ function AboutSection() {
     <Section id="about">
       <TitleSection>About me</TitleSection>
       <AboutList>
-        <AboutItem>
+        <AboutItemImg>
           <BlockColor></BlockColor>
           <Picture>
             <AboutImage src={AboutImg} alt="about image" loading="lazy" />
           </Picture>
-        </AboutItem>
-        <AboutItem>
+        </AboutItemImg>
+        <AboutItemDescription>
           <Description>
             I am a developer looking for a full-time job in a development
             campaign that develops interesting projects aimed at improving the
@@ -35,8 +38,9 @@ function AboutSection() {
             the task, aimed at successful implementation. Continuous improvement
             of your professional skills.
           </Description>
-        </AboutItem>
+        </AboutItemDescription>
       </AboutList>
+      <ResumeButton />
     </Section>
   );
 }

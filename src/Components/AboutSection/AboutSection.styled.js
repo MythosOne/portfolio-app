@@ -34,18 +34,32 @@ const borderBlock = keyframes`
     }
 `;
 
+const fadeIn = keyframes` 
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 export const Section = styled.section`
   max-width: 440px;
   width: 100%;
 
   display: flex;
   flex-direction: column;
+  gap: 20px;
   background-size: cover;
   background-color: transparent;
 
   margin-top: 80px;
 
   @media screen and (${media.tablet}) {
+    position: relative;
+    gap: 0;
     max-width: none;
     width: 708px;
 
@@ -81,7 +95,7 @@ export const AboutList = styled.ul`
     align-items: flex-start;
     border-radius: 10px;
 
-    height: 245px;
+    height: 265px;
 
     background-image: url(${require('../../assets/images/about-background-1440.jpg')});
 
@@ -101,18 +115,7 @@ export const AboutList = styled.ul`
   }
 `;
 
-const fadeIn = keyframes` 
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-export const AboutItem = styled.li`
+export const AboutItemImg = styled.li`
   position: relative;
 
   animation: ${fadeIn} 1s ease forwards;
@@ -163,6 +166,10 @@ export const AboutImage = styled.img`
 
   animation: ${borderPicture} 8s ease-in-out infinite;
   opacity: 0.95;
+`;
+
+export const AboutItemDescription = styled.li`
+  animation: ${fadeIn} 1s ease forwards;
 `;
 
 export const Description = styled.p`

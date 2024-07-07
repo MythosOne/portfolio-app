@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { theme } from 'theme/theme';
+const { media, shadows, colors, fonts, fontWeights } = theme;
 
 export const CardList = styled.ul`
   display: flex;
@@ -14,7 +16,7 @@ export const CardList = styled.ul`
 
   margin-top: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     gap: 20px;
   }
 `;

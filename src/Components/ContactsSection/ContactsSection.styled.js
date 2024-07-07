@@ -8,14 +8,14 @@ export const Section = styled.section`
 
   margin-bottom: 100px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (${media.tablet}) {
     max-width: none;
     width: 708px;
 
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 1240px;
   }
 `;
@@ -80,7 +80,7 @@ export const Link = styled.a`
     transition: stroke 0.2s ease-in-out;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     font-size: 24px;
   }
 `;
@@ -110,29 +110,9 @@ export const ViberItem = styled.li``;
 
 export const WhatsAppItem = styled.li``;
 
-export const LinkedinLink = styled.a`
-  /* stroke: #212121;
-  fill: #212121;
+export const LinkedinLink = styled.a``;
 
-  &:hover {
-    stroke: #2196f3;
-    fill: #2196f3;
-
-    transition: all 0.2s ease-in-out;
-  } */
-`;
-
-export const TelegramLink = styled.a`
-  /* stroke: #212121;
-  fill: #212121;
-
-  &:hover {
-    stroke: #2196f3;
-    fill: #2196f3;
-
-    transition: all 0.2s ease-in-out;
-  } */
-`;
+export const TelegramLink = styled.a``;
 
 export const ViberLink = styled.a``;
 

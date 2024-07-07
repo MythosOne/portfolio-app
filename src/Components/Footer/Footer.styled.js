@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 import { theme } from 'theme/theme';
-const { fonts, fontWeights} = theme;
+const { media, fonts, fontWeights} = theme;
 
 export const Section = styled.footer`
   display: none;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (${media.tablet}) {
     width: 728px;
     margin: 40px auto 0;
 
@@ -23,7 +23,7 @@ export const Section = styled.footer`
     border-image: radial-gradient(circle, #2196f3, transparent) 1 0%;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     width: 1240px;
   }
 `;
@@ -53,7 +53,7 @@ export const ArrowUpBtn = styled.a`
     transition: all 0.2s ease-in-out;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (${media.tablet}) {
     width: 32px;
     height: 32px;
   }

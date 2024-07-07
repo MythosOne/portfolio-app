@@ -84,7 +84,7 @@ export const StackList = styled.ul`
   flex-wrap: wrap;
   gap: 10px;
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (${media.desktop}) {
     margin-top: 15px;
   }
 `;
