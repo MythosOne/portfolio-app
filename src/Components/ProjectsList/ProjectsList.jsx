@@ -17,6 +17,8 @@ function ProjectsList() {
   );
 }
 
-ProjectsList.propTypes = {};
+ProjectsList.propTypes = {
+  
+};
 
 export default ProjectsList;

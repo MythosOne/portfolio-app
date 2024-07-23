@@ -10,7 +10,7 @@ function ResumeButton() {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/victor_avramidi_resume.pdf';
-    link.download = 'victor_avramidi_resume.pdf';
+    link.download = '/victor_avramidi_resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
