@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import resume from "assets/resume/victor_avramidi_resume.pdf"
+
 import { BlockBtn, DownloadBtn, ButtonImg } from './ResumeButton.styled';
 
 import { ResumeBtnImg } from 'assets/icons/IconsComponent';
@@ -9,11 +11,10 @@ function ResumeButton() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/victor_avramidi_resume.pdf';
+    link.href = resume;
     link.download = 'victor_avramidi_resume.pdf';
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);
   };
 
   return (
