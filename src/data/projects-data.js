@@ -11,14 +11,14 @@ import {
   SaasImg,
   FigmaImg,
   WebPackImg,
-  JsImg,
-  TsImg,
+  // JsImg,
+  // TsImg,
   ReactImg,
-  ReduxImg,
-  MuiImg,
-  NodeImg,
-  MongoDBImg,
-  DockerImg,
+  // ReduxImg,
+  // MuiImg,
+  // NodeImg,
+  // MongoDBImg,
+  // DockerImg,
 } from '../assets/icons/IconsComponent';
 
 const projectsData = [
@@ -75,15 +75,25 @@ const projectsData = [
       'The "Weather App" website offers a user-friendly platform for checking current weather conditions and forecasts. The main page features a clean and intuitive design, allowing users to quickly access weather information for different locations. Key features include real-time updates, detailed forecasts, and an easy-to-use search function. The website is fully responsive, ensuring a seamless experience on all devices.',
     techStack: [<ReactImg width={'32'}/>],
   },
+  // {
+  //   id: 5,
+  //   projectName: 'PhoneBook',
+  //   projectImg: phonebook,
+  //   projectUrl: 'https://mythosone.github.io/react-phonebook-mui/',
+  //   projectGit: 'https://github.com/MythosOne/react-phonebook-mui',
+  //   description:
+  //     'The "React Phonebook" website is a convenient digital address book developed using React and Material-UI. The main page features a modern and functional design, providing easy access to key features. Users can add, edit, and delete contacts, as well as quickly find the necessary entries using the built-in search.',
+  //   techStack: [<ReactImg width={'32'}/>, <MuiImg width={'32'}/>, <NodeImg width={'32'}/>, <MongoDBImg width={'32'}/>, <DockerImg width={'32'}/>, <ReduxImg width={'32'}/>, ],
+  // },
   {
     id: 5,
-    projectName: 'PhoneBook',
-    projectImg: phonebook,
-    projectUrl: 'https://mythosone.github.io/react-phonebook-mui/',
-    projectGit: 'https://github.com/MythosOne/react-phonebook-mui',
+    projectName: 'Future Project',
+    projectImg: project,
+    projectUrl: 'http://',
+    projectGit: 'http://',
     description:
-      'The "React Phonebook" website is a convenient digital address book developed using React and Material-UI. The main page features a modern and functional design, providing easy access to key features. Users can add, edit, and delete contacts, as well as quickly find the necessary entries using the built-in search.',
-    techStack: [<ReactImg width={'32'}/>, <MuiImg width={'32'}/>, <NodeImg width={'32'}/>, <MongoDBImg width={'32'}/>, <DockerImg width={'32'}/>, <ReduxImg width={'32'}/>, ],
+      'New project coming soon.',
+    techStack: [<ReactImg width={'32'}/>],
   },
   {
     id: 6,
