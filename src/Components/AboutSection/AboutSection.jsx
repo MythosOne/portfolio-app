@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import ResumeButton from './ResumeButton/ResumeButton';
 
@@ -44,7 +43,5 @@ function AboutSection() {
     </Section>
   );
 }
-
-AboutSection.propTypes = {};
 
 export default AboutSection;

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import PropTypes  from 'prop-types'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -32,7 +31,5 @@ function Toastify({ message }) {
     </>
   );
 }
-
-Toastify.propTypes = {};
 
 export default Toastify;

@@ -29,7 +29,7 @@ section {
   padding: 0 20px;
   margin: 60px 0 0;
 
-  scroll-margin-top: 60px;
+  scroll-margin-top: 80px;
 }
 
 ul,
@@ -57,11 +57,6 @@ p {
 
 img {
   display: block;
-  /* max-width: 100%;
-  height: auto; */
-/* 
-  object-fit: cover;
-  object-position: center; */
 }
 
 html {

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Section,
@@ -7,7 +6,6 @@ import {
   TechList,
   TechItem,
   Picture,
-  Image,
 } from './TechStackSection.styled';
 
 import {
@@ -50,16 +48,7 @@ function TechStackSection() {
         {StackArr.map(stack => {
           return (
             <TechItem key={stack.id}>
-              <Picture>
-                {/* <Image
-                  src={stack.img}
-                  width="60"
-                  height="60"
-                  alt={`${stack.techStack} image`}
-                  loading="lazy"
-                /> */}
-                {stack.img}
-              </Picture>
+              <Picture>{stack.img}</Picture>
             </TechItem>
           );
         })}

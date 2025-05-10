@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import resume from "assets/resume/victor_avramidi_resume.pdf"
 
@@ -30,7 +29,5 @@ function ResumeButton() {
     </>
   );
 }
-
-ResumeButton.propTypes = {};
 
 export default ResumeButton;
