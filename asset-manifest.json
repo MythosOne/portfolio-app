@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.273075e5.css",
-    "main.js": "/portfolio-app/static/js/main.9e6dce4d.js",
-    "static/media/webstudio.png": "/portfolio-app/static/media/webstudio.189265ef4794250dae91.png",
-    "static/media/ecosolution.png": "/portfolio-app/static/media/ecosolution.5a59bbf2ac755746f29f.png",
-    "static/media/weatherapp.png": "/portfolio-app/static/media/weatherapp.b698bf928cc3308eb9bf.png",
-    "static/media/foodsta.png": "/portfolio-app/static/media/foodsta.f49f85f9ec14891af580.png",
+    "main.css": "/portfolio-app/static/css/main.883a39be.css",
+    "main.js": "/portfolio-app/static/js/main.bd9a0d12.js",
     "static/media/victor_avramidi_resume.pdf": "/portfolio-app/static/media/victor_avramidi_resume.dd0377f6104c5e9f289a.pdf",
+    "static/media/ecosolution.jpg": "/portfolio-app/static/media/ecosolution.61e506d0b7208e8568c9.jpg",
+    "static/media/phonebook.jpg": "/portfolio-app/static/media/phonebook.99fc6329cafe02b0eade.jpg",
+    "static/media/weatherapp.jpg": "/portfolio-app/static/media/weatherapp.0bc586459267f202c006.jpg",
     "static/media/future-project.jpg": "/portfolio-app/static/media/future-project.8cba7ad67949eb43ede6.jpg",
+    "static/media/webstudio.jpg": "/portfolio-app/static/media/webstudio.f70a252b847a65ab9658.jpg",
     "static/media/about-background-1440.jpg": "/portfolio-app/static/media/about-background-1440.bdbdb2cc1f8fb14c7ec7.jpg",
+    "static/media/foodsta.jpg": "/portfolio-app/static/media/foodsta.0ae0b822f55b478263b9.jpg",
+    "static/media/node_rest_api.jpg": "/portfolio-app/static/media/node_rest_api.a3bd5f342d288f28d050.jpg",
     "static/media/about-victor.jpg": "/portfolio-app/static/media/about-victor.a13ef684b64a9944da99.jpg",
     "index.html": "/portfolio-app/index.html",
-    "main.273075e5.css.map": "/portfolio-app/static/css/main.273075e5.css.map",
-    "main.9e6dce4d.js.map": "/portfolio-app/static/js/main.9e6dce4d.js.map"
+    "main.883a39be.css.map": "/portfolio-app/static/css/main.883a39be.css.map",
+    "main.bd9a0d12.js.map": "/portfolio-app/static/js/main.bd9a0d12.js.map"
   },
   "entrypoints": [
-    "static/css/main.273075e5.css",
-    "static/js/main.9e6dce4d.js"
+    "static/css/main.883a39be.css",
+    "static/js/main.bd9a0d12.js"
   ]
 }
