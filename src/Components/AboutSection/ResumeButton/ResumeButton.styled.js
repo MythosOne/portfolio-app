@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { theme } from 'theme/theme';
 const { media, fonts, fontWeights } = theme;
 
-export const BlockBtn = styled.div`
+export const BlockBtn = styled.li`
   display: flex;
   justify-content: center;
 `;
@@ -48,7 +48,6 @@ export const DownloadBtn = styled.button`
   }
 
   @media screen and (${media.tablet}) {
-    position: absolute;
     width: 130px;
     height: 29px;
 
@@ -61,7 +60,6 @@ export const DownloadBtn = styled.button`
   }
 
   @media screen and (${media.desktop}) {
-    margin: 32px 0 48px;
     width: 150px;
     height: 39px;
 

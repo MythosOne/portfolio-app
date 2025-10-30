@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ResumeButton from './ResumeButton/ResumeButton';
+import SertificateButton from './SertificateButton/SertificateButton';
 
 import AboutImg from 'assets/images/about-victor.jpg';
 
@@ -14,6 +15,7 @@ import {
   Picture,
   AboutImage,
   Description,
+  ContainerBtn,
 } from './AboutSection.styled.js';
 
 function AboutSection() {
@@ -39,7 +41,10 @@ function AboutSection() {
           </Description>
         </AboutItemDescription>
       </AboutList>
-      <ResumeButton />
+      <ContainerBtn>
+        <ResumeButton />
+        <SertificateButton />
+      </ContainerBtn>
     </Section>
   );
 }

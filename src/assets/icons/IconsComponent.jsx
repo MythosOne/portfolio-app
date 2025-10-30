@@ -2,7 +2,7 @@ import React from 'react';
 
 //!!! AboutSection
 
-export const ResumeBtnImg = ({width, height, stroke}) => {
+export const ResumeBtnImg = ({ width, height, stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +18,44 @@ export const ResumeBtnImg = ({width, height, stroke}) => {
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
       <polyline points="7 10 12 15 17 10" />
       <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+  );
+};
+
+export const CertificateBtnImg = ({ width, height, stroke }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        stroke="#CCCCCC"
+        strokeWidth="2"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <g clipPath="url(#clip0_15_200)">
+          <circle
+            cx="12"
+            cy="13"
+            r="2"
+            stroke={stroke}
+            strokeLinejoin="round"
+          ></circle>
+          <path
+            d="M12 7.5C7.69517 7.5 4.47617 11.0833 3.39473 12.4653C3.14595 12.7832 3.14595 13.2168 3.39473 13.5347C4.47617 14.9167 7.69517 18.5 12 18.5C16.3048 18.5 19.5238 14.9167 20.6053 13.5347C20.8541 13.2168 20.8541 12.7832 20.6053 12.4653C19.5238 11.0833 16.3048 7.5 12 7.5Z"
+            stroke={stroke}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
+        </g>
+      </g>
     </svg>
   );
 };

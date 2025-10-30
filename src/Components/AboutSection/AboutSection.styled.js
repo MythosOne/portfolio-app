@@ -46,6 +46,7 @@ const fadeIn = keyframes`
 `;
 
 export const Section = styled.section`
+  position: relative;
   max-width: 440px;
   width: 100%;
 
@@ -58,7 +59,6 @@ export const Section = styled.section`
   margin-top: 80px;
 
   @media screen and (${media.tablet}) {
-    position: relative;
     gap: 0;
     max-width: none;
     width: 708px;
@@ -116,7 +116,7 @@ export const AboutList = styled.ul`
 `;
 
 export const AboutItemImg = styled.li`
-  position: relative;
+  /* position: relative; */
 
   animation: ${fadeIn} 1s ease forwards;
 `;
@@ -187,5 +187,24 @@ export const Description = styled.p`
   @media screen and (${media.desktop}) {
     font-size: 22px;
     line-height: 1.6em;
+  }
+`;
+
+export const ContainerBtn = styled.ul`
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+
+  @media screen and (${media.tablet}) {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+  }
+
+  @media screen and (${media.desktop}) {
+    right: 40px;
+    /* bottom: -40px; */
   }
 `;
