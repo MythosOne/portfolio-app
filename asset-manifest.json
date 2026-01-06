@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.883a39be.css",
-    "main.js": "/portfolio-app/static/js/main.ba64d05f.js",
+    "main.js": "/portfolio-app/static/js/main.909d53f7.js",
     "static/media/victor_avramidi_certificate.pdf": "/portfolio-app/static/media/victor_avramidi_certificate.0c9e63ada1f913d3573c.pdf",
     "static/media/victor_avramidi_resume.pdf": "/portfolio-app/static/media/victor_avramidi_resume.fbae04c56cf3a3c3a326.pdf",
     "static/media/ecosolution.jpg": "/portfolio-app/static/media/ecosolution.61e506d0b7208e8568c9.jpg",
@@ -15,10 +15,10 @@
     "static/media/about-victor.jpg": "/portfolio-app/static/media/about-victor.a13ef684b64a9944da99.jpg",
     "index.html": "/portfolio-app/index.html",
     "main.883a39be.css.map": "/portfolio-app/static/css/main.883a39be.css.map",
-    "main.ba64d05f.js.map": "/portfolio-app/static/js/main.ba64d05f.js.map"
+    "main.909d53f7.js.map": "/portfolio-app/static/js/main.909d53f7.js.map"
   },
   "entrypoints": [
     "static/css/main.883a39be.css",
-    "static/js/main.ba64d05f.js"
+    "static/js/main.909d53f7.js"
   ]
 }
