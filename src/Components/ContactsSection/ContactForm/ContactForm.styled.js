@@ -9,7 +9,6 @@ export const Form = styled.form`
   max-width: 480px;
 
   background-color: #f5f4fa;
-  /* background-color: #eaedf1; */
 
   display: flex;
   flex-direction: column;
@@ -42,7 +41,7 @@ export const Label = styled.label`
   font-family: ${fonts.second};
   font-size: 16px;
   font-style: normal;
-  font-weight: ${fontWeights.regular };
+  font-weight: ${fontWeights.regular};
   line-height: normal;
   letter-spacing: -0.64px;
 `;
@@ -54,7 +53,7 @@ export const Input = styled.input`
   font-family: ${fonts.second};
   font-size: 18px;
   font-style: normal;
-  font-weight: ${fontWeights.regular };
+  font-weight: ${fontWeights.regular};
   line-height: normal;
   letter-spacing: -0.72px;
 
@@ -92,7 +91,7 @@ export const InputMessage = styled.textarea`
   font-family: ${fonts.second};
   font-size: 18px;
   font-style: normal;
-  font-weight: ${fontWeights.regular };
+  font-weight: ${fontWeights.regular};
   line-height: normal;
   letter-spacing: -0.72px;
 
@@ -130,23 +129,28 @@ export const SendBtn = styled.button`
   font-family: ${fonts.second};
   font-size: 16px;
   font-style: normal;
-  font-weight: ${fontWeights.regular };
+  font-weight: ${fontWeights.regular};
   line-height: 18px;
 
   cursor: pointer;
 
-  &:hover {
+  transition: all 0.25s ease-in-out;
+
+  > span {
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.05);
     background: #2774b2;
     color: #fff;
-
-    transition: all 0.2s ease-in-out;
+    box-shadow: ${shadows.hoverShadow};
 
     > span {
       background: #fff;
       stroke: #2196f3;
       border: 1px solid #2196f3;
-
-      transition: all 0.2s ease-in-out;
     }
   }
 

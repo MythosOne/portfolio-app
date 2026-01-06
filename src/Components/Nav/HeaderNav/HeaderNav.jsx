@@ -1,6 +1,5 @@
 import React from 'react';
 import navData from 'data/nav-data';
-import PropTypes from 'prop-types';
 
 import { Nav, NavList, NavListItem, NavListItemLink } from './HeaderNav.styled';
 
@@ -29,7 +28,5 @@ function HeaderNav() {
     </>
   );
 }
-
-HeaderNav.propTypes = {};
 
 export default HeaderNav;

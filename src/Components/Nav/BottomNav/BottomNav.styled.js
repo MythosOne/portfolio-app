@@ -1,5 +1,3 @@
-import styled from '@emotion/styled';
-
 export const bottomNavigationStyle = {
   position: 'fixed',
   bottom: '20px',
@@ -19,10 +17,5 @@ export const bottomNavigationStyle = {
 export const BottomNavigationActionStyle = {
   color: '#212121',
 
-  //!!! не работает цвет и толщина шрифта
-  '&:hover, &:focus': { fontWeight: '500', color: '#2196f3' }, 
+  '&:hover, &:focus-visible': { fontWeight: '500', color: '#2196f3' }, 
 };
-
-// export const NavListItem = styled.div``;
-
-// export const NavListItemLink = styled.a``;

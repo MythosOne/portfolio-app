@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   CardItem,
@@ -66,7 +65,5 @@ function ProjectCard({ data }) {
     </CardItem>
   );
 }
-
-ProjectCard.propTypes = {};
 
 export default ProjectCard;

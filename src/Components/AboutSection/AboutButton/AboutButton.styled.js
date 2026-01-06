@@ -1,13 +1,16 @@
 import styled from '@emotion/styled';
 import { theme } from 'theme/theme';
-const { media, fonts, fontWeights } = theme;
+const { media, shadows, fonts, fontWeights } = theme;
 
 export const BlockBtn = styled.li`
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
 `;
 
-export const DownloadBtn = styled.button`
+export const AboutBtn = styled.button`
+
   padding: 3px;
 
   width: 150px;
@@ -15,8 +18,9 @@ export const DownloadBtn = styled.button`
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 16px;
 
   border-radius: 500px;
   border: 2px solid #2196f3;
@@ -25,31 +29,38 @@ export const DownloadBtn = styled.button`
 
   color: #212121;
   font-family: ${fonts.second};
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: ${fontWeights.medium};
-  line-height: 18px;
+  line-height: 14px;
 
   cursor: pointer;
 
-  &:hover {
-    background: #2774b2;
-    color: #fff;
+  transition: all 0.25s ease-in-out;
 
-    transition: all 0.2s ease-in-out;
+  > span {
+    transition: all 0.25s ease-in-out,;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.05);
+    background-color: #2774b2;
+    color: #fff;
+    box-shadow: ${shadows.hoverShadow};
 
     > span {
-      background: #fff;
+      background-color: #fff;
       stroke: #2196f3;
       border: 1px solid #2196f3;
-
-      transition: all 0.2s ease-in-out;
     }
   }
 
   @media screen and (${media.tablet}) {
     width: 130px;
     height: 29px;
+
+    padding-left: 6px;
 
     font-size: 14px;
 
@@ -71,6 +82,8 @@ export const DownloadBtn = styled.button`
 `;
 
 export const ButtonImg = styled.span`
+  position: absolute;
+  right: 4px;
   box-sizing: border-box;
   display: flex;
   align-items: center;

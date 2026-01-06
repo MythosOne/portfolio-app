@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { useFormik } from 'formik';
 import emailjs from 'emailjs-com';
 import * as Yup from 'yup';
@@ -20,7 +20,7 @@ import {
 import { ArrowRightImg } from 'assets/icons/IconsComponent';
 
 export const ContactForm = () => {
-  const { toast, setToast } = useContext(AppContext);
+  const { setToast } = useContext(AppContext);
 
   const ContactUsSchema = Yup.object().shape({
     name: Yup.string()

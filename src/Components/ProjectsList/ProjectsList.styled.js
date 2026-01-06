@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { theme } from 'theme/theme';
-const { media, shadows, colors, fonts, fontWeights } = theme;
+const { media } = theme;
 
 export const CardList = styled.ul`
   display: flex;

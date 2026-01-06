@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { theme } from 'theme/theme';
-const { media, shadows, colors, fonts, fontWeights } = theme;
+const { media, fonts, fontWeights } = theme;
 
 const borderPicture = keyframes`
     0% {
@@ -205,6 +205,5 @@ export const ContainerBtn = styled.ul`
 
   @media screen and (${media.desktop}) {
     right: 40px;
-    /* bottom: -40px; */
   }
 `;

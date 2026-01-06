@@ -14,7 +14,8 @@ export const DescriptionBlock = styled.div`
   box-sizing: border-box;
   padding: 15px;
 
-  overflow: scroll;
+  overflow: auto;
+  scrollbar-gutter: stable;
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,10 +33,11 @@ export const CardItem = styled.li`
 
   background-color: #fff;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
+    transform: scale(1.02);
     box-shadow: ${shadows.hoverShadow};
   }
 
@@ -106,9 +108,12 @@ export const WebsiteLink = styled.a`
   line-height: 2;
   letter-spacing: 0.06em;
 
-  &:hover {
+  transition: color 0.2s ease, transform 0.25s ease;
+
+  &:hover,
+  &:focus-visible {
     color: ${colors.accent};
-    transition: color 0.2s ease;
+    transform: scale(1.01);
   }
 `;
 
@@ -120,8 +125,11 @@ export const GitLink = styled.a`
   font-weight: ${fontWeights.semibold};
   letter-spacing: 0.03em;
 
-  &:hover {
+  transition: color 0.2s ease, transform 0.25s ease;
+
+  &:hover,
+  &:focus-visible {
     color: ${colors.accent};
-    transition: color 0.2s ease;
+    transform: scale(1.01);
   }
 `;

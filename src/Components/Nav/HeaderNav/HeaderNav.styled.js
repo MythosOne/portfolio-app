@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { theme } from 'theme/theme';
 
-// export const Header = styled.header``;
+const { shadows } = theme;
 
 export const Nav = styled.nav`
   @media screen and (max-width: 767px) {
@@ -14,8 +15,8 @@ export const NavList = styled.ul`
 `;
 
 export const NavListItem = styled.li`
-width: 80px;
-height: 20px;
+  width: 80px;
+  height: 20px;
 `;
 
 export const NavListItemLink = styled.a`
@@ -25,11 +26,13 @@ export const NavListItemLink = styled.a`
   font-weight: 500;
   position: relative;
 
-  &:hover {
+  transition: font-weight 0.25s, color 0.25s, text-shadow 0.25s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
     font-weight: 600;
-    /* color: #0074d9;  */
     color: #2196f3;
-    transition: font-size 0.5s;
+    text-shadow: ${shadows.hoverShadow};   
   }
 
   &::after {
@@ -39,10 +42,10 @@ export const NavListItemLink = styled.a`
     left: 0;
     width: 100%;
     height: 2px;
-    /* background-color: #0074d9; */
     background-color: #2196f3;
     transform: scaleX(0);
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease;
+    box-shadow: ${shadows.hoverShadow};
   }
 
   &:hover::after {

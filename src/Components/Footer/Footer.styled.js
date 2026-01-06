@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { theme } from 'theme/theme';
-const { media, fonts, fontWeights} = theme;
+const { media, shadows, fonts, fontWeights } = theme;
 
 export const Section = styled.footer`
   display: none;
@@ -45,12 +45,15 @@ export const ArrowUpBtn = styled.a`
 
   stroke: #fff;
 
-  &:hover {
+  transition: all 0.25s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.05);
     stroke: #2196f3;
     background: #fff;
     border: 1px solid #2196f3;
-
-    transition: all 0.2s ease-in-out;
+    box-shadow: ${shadows.hoverShadow};
   }
 
   @media screen and (${media.tablet}) {
@@ -73,49 +76,72 @@ export const LinkList = styled.ul`
 export const Item = styled.li``;
 
 export const GitLink = styled.a`
-  fill: #2196f3;
-
-  &:hover ellipse {
-    fill: #2196f3;
-    transition: fill 0.2s ease-in-out;
+  ellipse {
+    fill: #fff;
+    transition: fill 0.25s ease-in-out;
   }
 
-  &:hover path {
-    fill: #fff;
+  path {
+    fill: #2196f3;
+    transition: fill 0.25s ease-in-out;
+  }
 
-    transition: fill 0.2s ease-in-out;
+  &:hover ellipse,
+  &:focus-visible ellipse {
+    fill: #2196f3;
+  }
+
+  &:hover path,
+  &:focus-visible path {
+    fill: #fff;
   }
 `;
 
 export const LinkedinLink = styled.a`
-  fill: #fff;
-
-  &:hover ellipse {
-    fill: #fff;
-
-    transition: fill 0.2s ease-in-out;
+  ellipse {
+    fill: #2196f3;
+    transition: fill 0.25s ease-in-out;
   }
 
-  &:hover path {
-    fill: #2196f3;
+  path {
+    fill: #fff;
+    transition: fill 0.25s ease-in-out;
+  }
 
-    transition: fill 0.2s ease-in-out;
+  &:hover ellipse,
+  &:focus-visible ellipse {
+    fill: #fff;
+    transition: fill 0.25s ease-in-out;
+  }
+
+  &:hover path,
+  &:focus-visible path {
+    fill: #2196f3;
+    transition: fill 0.25s ease-in-out;
   }
 `;
 
 export const TelegramLink = styled.a`
-  fill: #2196f3;
-
-  &:hover ellipse {
-    fill: #fff;
-
-    transition: fill 0.2s ease-in-out;
+  ellipse {
+    fill: #2196f3;
+    transition: fill 0.25s ease-in-out;
   }
 
-  &:hover path {
-    fill: #2196f3;
+  path {
+    fill: #fff;
+    transition: fill 0.25s ease-in-out;
+  }
 
-    transition: fill 0.2s ease-in-out;
+  &:hover ellipse,
+  &:focus-visible ellipse {
+    fill: #fff;
+    transition: fill 0.25s ease-in-out;
+  }
+
+  &:hover path,
+  &:focus-visible path {
+    fill: #2196f3;
+    transition: fill 0.25s ease-in-out;
   }
 `;
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { LogoWrapper, DevText, Block, PortfolioText } from './Logo.styled';
 
@@ -15,7 +14,5 @@ function Logo() {
     </>
   );
 }
-
-Logo.propTypes = {};
 
 export default Logo;

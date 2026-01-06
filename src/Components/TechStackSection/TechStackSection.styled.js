@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { theme } from 'theme/theme';
-const { media, shadows, colors, fonts, fontWeights } = theme;
+const { media, fonts, fontWeights } = theme;
 
 export const Section = styled.section`
   max-width: 440px;

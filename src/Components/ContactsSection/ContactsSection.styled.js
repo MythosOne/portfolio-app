@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { theme } from '../../theme/theme';
-const { media, shadows, colors, fonts, fontWeights } = theme;
+const { media, fonts, fontWeights } = theme;
 
 export const Section = styled.section`
   max-width: 440px;
@@ -33,8 +33,6 @@ export const ContactBLock = styled.div`
 
   margin-top: 20px;
 `;
-
-// export const Address = styled.address``;
 
 export const ContactList = styled.ul`
   display: flex;
@@ -74,10 +72,12 @@ export const Link = styled.a`
 
   stroke: #212121;
 
-  &:hover {
-    stroke: #2196f3;
+  transition: stroke 0.25s ease-in-out, transform 0.25s ease-in-out;
 
-    transition: stroke 0.2s ease-in-out;
+  &:hover,
+  &:focus-visible {
+    stroke: #2196f3;
+    transform: scale(1.05);
   }
 
   @media screen and (${media.desktop}) {

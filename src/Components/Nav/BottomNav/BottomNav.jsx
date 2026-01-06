@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import navData from 'data/nav-data';
-import PropTypes from 'prop-types';
 
 import {
-  NavListItem,
-  NavListItemLink,
   bottomNavigationStyle,
   BottomNavigationActionStyle,
 } from './BottomNav.styled';
@@ -29,8 +26,6 @@ function BottomNav() {
       >
         {menuItems.map(menu => {
           return (
-            // <NavListItem key={menu.id}>
-            //   <NavListItemLink href={`#${menu.linkItem}`}>
             <BottomNavigationAction
               sx={BottomNavigationActionStyle}
               key={menu.id}
@@ -39,8 +34,6 @@ function BottomNav() {
               icon={menu.icon}
               href={`#${menu.linkItem}`}
             />
-            //   </NavListItemLink>
-            // </NavListItem>
           );
         })}
       </BottomNavigation>

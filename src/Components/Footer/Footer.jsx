@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Logo from '../Logo/Logo';
 
@@ -65,7 +64,5 @@ function Footer() {
     </Section>
   );
 }
-
-Footer.propTypes = {};
 
 export default Footer;

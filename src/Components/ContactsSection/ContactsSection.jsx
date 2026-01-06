@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Section,
@@ -102,7 +101,5 @@ function ContactsSection() {
     </Section>
   );
 }
-
-ContactsSection.propTypes = {};
 
 export default ContactsSection;
